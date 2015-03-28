@@ -1,4 +1,4 @@
-(function (document) {
+(function (window, document, undefined) {
   'use strict';
 
   // Grab a reference to our auto-binding template
@@ -15,4 +15,4 @@
 
 // wrap document so it plays nice with other libraries
 // http://www.polymer-project.org/platform/shadow-dom.html#wrappers
-})(wrap(document));
+})(window, wrap(document));
