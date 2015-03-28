@@ -5,12 +5,12 @@
   // and give it some initial binding values
   // Learn more about auto-binding templates at http://goo.gl/Dx1u2g
   var app = document.querySelector('#app');
-  app.appName = 'Yo, Polymer App!';
+  app.appName = '2015 MTA Conference';
 
   // Listen for template bound event to know when bindings
   // have resolved and content has been stamped to the page
   app.addEventListener('template-bound', function() {
-    console.log('Our app is ready to rock!');
+    console.log('Ready!');
   });
 
 // wrap document so it plays nice with other libraries

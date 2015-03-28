@@ -12,9 +12,19 @@
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild-->
 
-  <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
-  <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
-  <!-- endbuild -->
+
+  <!-- Conditionally load WC polyfills -->
+  <!-- Thanks to https://github.com/geelen/x-gif for the snippet -->
+  <script>
+    if ('registerElement' in document
+      && 'createShadowRoot' in HTMLElement.prototype
+      && 'import' in document.createElement('link')
+      && 'content' in document.createElement('template')) {
+      // We're using a browser with native WC support!
+    } else {
+      document.write('<script src="bower_components/webcomponentsjs/webcomponents.min.js"><\/script>');
+    }
+  </script>
 
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
@@ -34,9 +44,9 @@
 
         <!-- Drawer Content -->
         <core-menu selected="0">
-          <core-item label="Yo"></core-item>
-          <core-item label="Polymer"></core-item>
-          <core-item label="App"></core-item>
+          <core-item label="Schedule"></core-item>
+          <core-item label="Presenters"></core-item>
+          <core-item label="Info"></core-item>
         </core-menu>
 
       </core-header-panel>
@@ -51,11 +61,11 @@
         </core-toolbar>
 
         <!-- Main Content -->
-        <div class="hero-unit">
-          <yo-greeting></yo-greeting>
-          <p>You now have</p>
-          <yo-list></yo-list>
-        </div>
+        <app-router>
+          <app-route path="/schedule" import="/pages/schedule-page.html"></app-route>
+          <app-route path="/presenters" import="/pages/presenters-page.html"></app-route>
+          <app-route path="*" import="/pages/not-found-page.html"></app-route>
+        </app-router>
       </core-header-panel>
     </core-drawer-panel>
 
