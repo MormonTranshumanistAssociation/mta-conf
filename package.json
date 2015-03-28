@@ -1,6 +1,8 @@
 {
   "name": "mta-conf",
-  "version": "0.0.0",
+  "description": "App for displaying MTA conference schedule",
+  "repository": "https://github.com/MormonTranshumanistAssociation/mta-conf",
+  "version": "0.1.0",
   "dependencies": {},
   "devDependencies": {
     "apache-server-configs": "^2.7.1",
