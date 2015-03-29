@@ -1,0 +1,158 @@
+{
+  "schedule" : {
+    "2015-04-03" : [ {
+      "end" : "09:00",
+      "start" : "0:00",
+      "title" : "The 2015 MTA conference will begin in..."
+    }, {
+      "end" : "09:18",
+      "presenter" : "Lincoln Cannon",
+      "start" : "09:00",
+      "title" : "State of the Association"
+    }, {
+      "end" : "09:33",
+      "presenter" : "Brent Allsop",
+      "start" : "09:20",
+      "title" : "2014 membership survey results"
+    }, {
+      "end" : "09:40",
+      "presenter" : "The Four Hoarsemen",
+      "start" : "09:35",
+      "title" : "Musical performance: The Morning Breaks"
+    }, {
+      "end" : "09:58",
+      "presenter" : "Ben Blair",
+      "start" : "09:40",
+      "title" : "Come Follow Me: The Instrumental Atonement"
+    }, {
+      "end" : "10:18",
+      "presenter" : "Carl Youngblood",
+      "start" : "10:00",
+      "title" : "Transhumanism and Cheap Grace: Applying Bonhoeffer’s Insights to Transhumanist Ethics"
+    }, {
+      "end" : "10:38",
+      "presenter" : "Chris Bradford",
+      "start" : "10:20",
+      "title" : "Divine Aspirations: Creation, Ritual, and Authority"
+    }, {
+      "end" : "10:58",
+      "presenter" : "Don Bradley",
+      "start" : "10:40",
+      "title" : "An Experiment Upon the Word: Scientific Discourse and Methodology in Alma 32"
+    }, {
+      "end" : "11:45",
+      "presenter" : "Kristine Haglund",
+      "start" : "11:00",
+      "title" : "'Whatsoever Love Elects to Bless': Baroque, Romantic, Transhumanist and Mormon Expressions of Abundance"
+    }, {
+      "end" : "12:00",
+      "presenter" : "Kristine Haglund",
+      "start" : "11:45",
+      "title" : "Q&A"
+    }, {
+      "end" : "12:15",
+      "start" : "12:00",
+      "title" : "Lunch"
+    }, {
+      "end" : "12:25",
+      "presenter" : "Hank Pellissier",
+      "start" : "12:15",
+      "title" : "Report on MTA humanitarian projects"
+    }, {
+      "end" : "12:28",
+      "presenter" : "Roger Hansen",
+      "start" : "12:25",
+      "title" : "Q&A for Hank's talk"
+    }, {
+      "end" : "12:40",
+      "presenter" : "Kathy Wilson",
+      "start" : "12:30",
+      "title" : "Report on humanitarian work in India"
+    }, {
+      "end" : "12:58",
+      "presenter" : "Jordan Harmon",
+      "start" : "12:40",
+      "title" : "The problem of problem solving: contextual behavioral science and implications for human thriving"
+    }, {
+      "end" : "13:18",
+      "presenter" : "Rachel Stone",
+      "start" : "13:00",
+      "title" : "Ask Siri: A Glimpse of Tomorrow's Technological Government"
+    }, {
+      "end" : "13:38",
+      "presenter" : "Michaelann Bradley",
+      "start" : "13:20",
+      "title" : "Leveraging Social Media to Bridge the Digital Divide"
+    }, {
+      "end" : "13:45",
+      "presenter" : "The Four Hoarsemen",
+      "start" : "13:40",
+      "title" : "Musical performance: It's Only a Paper Moon"
+    }, {
+      "end" : "14:03",
+      "presenter" : "Micah Redding",
+      "start" : "13:45",
+      "title" : "The Urgent Need for Christian Transhumanism"
+    }, {
+      "end" : "14:23",
+      "presenter" : "Dorothy Deasy",
+      "start" : "14:05",
+      "title" : "Joining Together"
+    }, {
+      "end" : "14:43",
+      "presenter" : "James Carroll",
+      "start" : "14:25",
+      "title" : "The End of Religious Anxiety: Towards Religious Universalism"
+    }, {
+      "end" : "15:03",
+      "presenter" : "Joseph West",
+      "start" : "14:45",
+      "title" : "The Demands of Authentic Mormonism"
+    }, {
+      "end" : "15:10",
+      "start" : "15:05",
+      "title" : "5 minute break (assign someone to help clean up from lunch so that we can leave immediately at 5:30pm)"
+    }, {
+      "end" : "15:28",
+      "presenter" : "Caleb Jones",
+      "start" : "15:10",
+      "title" : "Mormonism and the Fractal Lineage of Gods"
+    }, {
+      "end" : "16:15",
+      "presenter" : "Ralph Merkle",
+      "start" : "15:30",
+      "title" : "Keynote address"
+    }, {
+      "end" : "16:30",
+      "presenter" : "Ralph Merkle",
+      "start" : "16:15",
+      "title" : "Q&A"
+    }, {
+      "end" : "17:15",
+      "start" : "16:30",
+      "title" : "Panel discussion with Lincoln Cannon, Kristine Haglund and Ralph Merkle"
+    }, {
+      "end" : "17:20",
+      "presenter" : "Lincoln Cannon",
+      "start" : "17:15",
+      "title" : "Closing Remarks"
+    }, {
+      "end" : "17:25",
+      "presenter" : "The Four Hoarsemen",
+      "start" : "17:20",
+      "title" : "Musical performance: Go the Distance"
+    }, {
+      "end" : "17:30",
+      "start" : "17:25",
+      "title" : "Mingle"
+    }, {
+      "end" : "19:00",
+      "start" : "17:30",
+      "title" : "Exit the building"
+    }, {
+      "end" : "22:00",
+      "start" : "19:00",
+      "title" : "Catered dinner at the Joseph Smith Memorial Building, Presidents Room"
+    } ]
+  }
+}
