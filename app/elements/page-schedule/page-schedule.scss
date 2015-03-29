@@ -4,4 +4,20 @@
 /* styles for the custom element itself - lowest specificity */
 :host {
   display: block;
+  font-size: 90%;
+}
+
+:host table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+:host td, th {
+  display: table-cell;
+  border-bottom: 1px solid #dddddd;
+  padding: 8px 15px 8px 15px;
+}
+
+:host th {
+  text-align: left;
 }

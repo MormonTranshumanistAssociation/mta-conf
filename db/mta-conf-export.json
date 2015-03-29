@@ -1,14 +1,13 @@
 {
   "schedule" : {
     "2015-04-03" : [ {
+      "display" : false,
       "end" : "09:00",
       "start" : "0:00",
       "title" : "The 2015 MTA conference will begin in..."
     }, {
       "end" : "09:18",
       "presenter" : "Lincoln Cannon",
-      "portrait": "http://cloud.metacannon.net/images/blog-lincoln/lincoln-cannon.jpg",
-      "bio": "is a philosopher and programmer, passionate about technology, spirituality, science and religion. He is a professional software engineer, Internet marketer and information technologist, with extensive experience leading technical teams in development and integration of web and mobile systems. In his spare time, he serves as president of the Mormon Transhumanist Association. He holds a masters degree in business and a bachelors degree in philosophy from Brigham Young University. Lincoln is married with Dorothée Vankrieckenge, a French national, and is father to three bilingual children.",
       "start" : "09:00",
       "title" : "State of the Association"
     }, {
@@ -45,7 +44,7 @@
       "end" : "11:45",
       "presenter" : "Kristine Haglund",
       "start" : "11:00",
-      "title" : "'Whatsoever Love Elects to Bless': Baroque, Romantic, Transhumanist and Mormon Expressions of Abundance"
+      "title" : "Keynote: 'Whatsoever Love Elects to Bless': Baroque, Romantic, Transhumanist and Mormon Expressions of Abundance"
     }, {
       "end" : "12:00",
       "presenter" : "Kristine Haglund",
@@ -113,7 +112,7 @@
     }, {
       "end" : "15:10",
       "start" : "15:05",
-      "title" : "5 minute break (assign someone to help clean up from lunch so that we can leave immediately at 5:30pm)"
+      "title" : "5 minute break"
     }, {
       "end" : "15:28",
       "presenter" : "Caleb Jones",
@@ -155,6 +154,11 @@
       "end" : "22:00",
       "start" : "19:00",
       "title" : "Catered dinner at the Joseph Smith Memorial Building, Presidents Room"
+    }, {
+      "display" : false,
+      "end" : "23:49",
+      "start" : "22:41",
+      "title" : "The conference is over."
     } ]
   }
 }

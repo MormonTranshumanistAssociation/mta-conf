@@ -3,11 +3,38 @@
 <polymer-element name="page-schedule" attributes="">
   <template>
     <link rel="stylesheet" href="page-schedule.css">
-    <div>Schedule</div>
+    <firebase-element id="base" location="https://mta-conf.firebaseio.com/schedule/2015-04-03" data="{{data}}"
+                      keys="{{keys}}"></firebase-element>
+    <table>
+      <thead>
+        <tr>
+          <th>Time</th>
+          <th>Title</th>
+          <th>Presenter</th>
+        </tr>
+      </thead>
+      <tbody>
+        <template repeat="{{item in data}}">
+          <template if="{{display(item)}}">
+            <tr>
+              <td>{{item.start}}</td>
+              <td>{{item.title}}</td>
+              <td>{{item.presenter}}</td>
+            </tr>
+          </template>
+        </template>
+      </tbody>
+    </table>
   </template>
   <script>
     (function () {
-      Polymer({
+      Polymer('page-schedule', {
+        display: function (item) {
+          if (item && (item.display || item.display === undefined)) {
+            return true;
+          }
+          return false;
+        },
         ready: function () {
 
         }
