@@ -95,6 +95,8 @@
                 timeDiff = self.getTimeDifference(now, end);
                 if (timeDiff.totalSeconds <= duration.totalSeconds * 0.1) {
                   self.almostOutOfTime = true;
+                } else {
+                  self.almostOutOfTime = false;
                 }
                 self.timeLeft = timeDiff.duration;
               }
