@@ -1,0 +1,25 @@
+:host {
+  display: block;
+}
+
+:host h1 {
+  font-size: 300%;
+}
+
+:host #countdown {
+  font-size: 1500%;
+}
+
+:host .happy {
+  background-color: green;
+}
+
+:host .warning {
+  background-color: red;
+}
+
+:host #marquee {
+  font-family: Trebuchet, sans-serif;
+  color: white;
+  text-align: center;
+}

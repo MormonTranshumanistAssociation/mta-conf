@@ -2,33 +2,7 @@
 
 <polymer-element name="presentation-timer" attributes="">
   <template>
-    <style>
-      :host {
-        display: block;
-      }
-
-      :host h1 {
-        font-size: 300%;
-      }
-
-      :host #countdown {
-        font-size: 1500%;
-      }
-
-      :host .happy {
-        background-color: green;
-      }
-
-      :host .warning {
-        background-color: red;
-      }
-
-      :host #marquee {
-        font-family: Trebuchet, sans-serif;
-        color: white;
-        text-align: center;
-      }
-    </style>
+    <link rel="stylesheet" href="presentation-timer.css">
     <firebase-element id="base" location="https://mta-conf.firebaseio.com/schedule/2015-04-03" data="{{data}}"
                       keys="{{keys}}"></firebase-element>
     <div id="marquee" class="{{ {happy: !almostOutOfTime, warning: almostOutOfTime} | tokenList}}" vertical layout fit>
@@ -42,11 +16,11 @@
     (function () {
       Polymer({
         almostOutOfTime: false,
-        day: "2015-03-28",
-        theTitle: "The Title",
-        timeLeft: "",
+        day: '2015-03-28',
+        theTitle: 'The Title',
+        timeLeft: '',
         getTimeDifference: function (earlierDate, laterDate) {
-          var oDiff = new Object();
+          var oDiff = {};
 
           //  Calculate Differences
           //  -------------------------------------------------------------------  //
@@ -72,7 +46,7 @@
           if (oDiff.hours > 0) {
             hourtext = String(oDiff.hours);
           }
-          if (hourtext.length == 1) {
+          if (hourtext.length === 1) {
             hourtext = '0' + hourtext;
           }
 
@@ -81,7 +55,7 @@
           if (oDiff.minutes > 0) {
             mintext = String(oDiff.minutes);
           }
-          if (mintext.length == 1) {
+          if (mintext.length === 1) {
             mintext = '0' + mintext;
           }
 
@@ -90,7 +64,7 @@
           if (oDiff.seconds > 0) {
             sectext = String(oDiff.seconds);
           }
-          if (sectext.length == 1) {
+          if (sectext.length === 1) {
             sectext = '0' + sectext;
           }
 
@@ -102,8 +76,8 @@
           return oDiff;
         },
         updateValues: function () {
-          var self = this, now = new Date(), nothingIsHappening = true, nextEvent = null, nextEventStart;
-          self.theTitle = "Nothing is happening";
+          var self = this, now = new Date(), nothingIsHappening = true, nextEvent = null;
+          self.theTitle = 'Nothing is happening';
           self.data.forEach(function (element) {
             var start = new Date(Date.parse(self.day + ' ' + element.start)),
               end = new Date(Date.parse(self.day + ' ' + element.end)),
