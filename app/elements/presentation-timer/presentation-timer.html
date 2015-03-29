@@ -1,0 +1,130 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="presentation-timer" attributes="">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      :host h1 {
+        font-size: 300%;
+      }
+
+      :host #countdown {
+        font-size: 1500%;
+      }
+
+      :host .happy {
+        background-color: green;
+      }
+
+      :host .warning {
+        background-color: red;
+      }
+
+      :host #marquee {
+        font-family: Trebuchet, sans-serif;
+        color: white;
+        text-align: center;
+      }
+    </style>
+    <firebase-element id="base" location="https://mta-conf.firebaseio.com/schedule/2015-04-03" data="{{data}}"
+                      keys="{{keys}}"></firebase-element>
+    <div style="border: 1px dashed black;" id="marquee" class="{{ {happy: !almostOutOfTime, warning: almostOutOfTime} | tokenList}}" vertical layout fit>
+      <div style="border: 1px dashed black;" flex>
+        <div style="border: 1px dashed blue;" self-center>
+          <h1>{{theTitle}}</h1>
+          <div id="countdown">{{timeLeft}}</div>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        almostOutOfTime: false,
+        day: "2015-03-28",
+        theTitle: "The Title",
+        timeLeft: "",
+        getTimeDifference: function (earlierDate, laterDate) {
+          var oDiff = new Object();
+
+          //  Calculate Differences
+          //  -------------------------------------------------------------------  //
+          var nTotalDiff = laterDate.getTime() - earlierDate.getTime();
+          oDiff.totalSeconds = nTotalDiff / 1000;
+
+          oDiff.days = Math.floor(nTotalDiff / 1000 / 60 / 60 / 24);
+          nTotalDiff -= oDiff.days * 1000 * 60 * 60 * 24;
+
+          oDiff.hours = Math.floor(nTotalDiff / 1000 / 60 / 60);
+          nTotalDiff -= oDiff.hours * 1000 * 60 * 60;
+
+          oDiff.minutes = Math.floor(nTotalDiff / 1000 / 60);
+          nTotalDiff -= oDiff.minutes * 1000 * 60;
+
+          oDiff.seconds = Math.floor(nTotalDiff / 1000);
+          //  -------------------------------------------------------------------  //
+
+          //  Format Duration
+          //  -------------------------------------------------------------------  //
+          //  Format Hours
+          var hourtext = '00';
+          if (oDiff.days > 0) {
+            hourtext = String(oDiff.days);
+          }
+          if (hourtext.length == 1) {
+            hourtext = '0' + hourtext;
+          }
+
+          //  Format Minutes
+          var mintext = '00';
+          if (oDiff.minutes > 0) {
+            mintext = String(oDiff.minutes);
+          }
+          if (mintext.length == 1) {
+            mintext = '0' + mintext;
+          }
+
+          //  Format Seconds
+          var sectext = '00';
+          if (oDiff.seconds > 0) {
+            sectext = String(oDiff.seconds);
+          }
+          if (sectext.length == 1) {
+            sectext = '0' + sectext;
+          }
+
+          //  Set Duration
+          var sDuration = hourtext + ':' + mintext + ':' + sectext;
+          oDiff.duration = sDuration;
+          //  -------------------------------------------------------------------  //
+
+          return oDiff;
+        },
+        updateValues: function () {
+          var self = this, now = new Date();
+          self.theTitle = "Nothing is happening";
+          self.data.forEach(function (element) {
+            var start = new Date(Date.parse(self.day + ' ' + element.start)),
+              end = new Date(Date.parse(self.day + ' ' + element.end)),
+              timeDiff, duration = self.getTimeDifference(start, end);
+            if (now >= start && now <= end) {
+              self.theTitle = element.title;
+              timeDiff = self.getTimeDifference(now, end);
+              if (timeDiff.totalSeconds <= duration.totalSeconds * 0.1) {
+                self.almostOutOfTime = true;
+              }
+              self.timeLeft = timeDiff.duration;
+            }
+          });
+          this.async(this.updateValues, null, 1000);
+        },
+        ready: function () {
+          this.async(this.updateValues, null, 1000);
+        }
+      });
+    })();
+  </script>
+</polymer-element>

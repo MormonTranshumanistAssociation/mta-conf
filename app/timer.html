@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MTA Conf Timer</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- Conditionally load WC polyfills -->
+  <!-- Thanks to https://github.com/geelen/x-gif for the snippet -->
+  <script>
+    if ('registerElement' in document
+      && 'createShadowRoot' in HTMLElement.prototype
+      && 'import' in document.createElement('link')
+      && 'content' in document.createElement('template')) {
+      // We're using a browser with native WC support!
+    } else {
+      document.write('<script src="bower_components/webcomponentsjs/webcomponents.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- will be replaced with elements/elements.vulcanized.html -->
+  <link rel="import" href="elements/elements.html">
+  <!-- endreplace-->
+</head>
+
+<body unresolved fullbleed layout vertical>
+<template is="auto-binding" id="app">
+
+  <presentation-timer></presentation-timer>
+
+</template>
+
+<!-- build:js scripts/app.js -->
+<script src="scripts/app.js"></script>
+<!-- endbuild-->
+</body>
+
+</html>
