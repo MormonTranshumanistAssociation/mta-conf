@@ -31,12 +31,10 @@
     </style>
     <firebase-element id="base" location="https://mta-conf.firebaseio.com/schedule/2015-04-03" data="{{data}}"
                       keys="{{keys}}"></firebase-element>
-    <div style="border: 1px dashed black;" id="marquee" class="{{ {happy: !almostOutOfTime, warning: almostOutOfTime} | tokenList}}" vertical layout fit>
-      <div style="border: 1px dashed black;" flex>
-        <div style="border: 1px dashed blue;" self-center>
-          <h1>{{theTitle}}</h1>
-          <div id="countdown">{{timeLeft}}</div>
-        </div>
+    <div id="marquee" class="{{ {happy: !almostOutOfTime, warning: almostOutOfTime} | tokenList}}" vertical layout fit>
+      <div self-center>
+        <h1>{{theTitle}}</h1>
+        <div id="countdown">{{timeLeft}}</div>
       </div>
     </div>
   </template>
