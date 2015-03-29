@@ -35,21 +35,22 @@ body {
 
 [main] core-toolbar,
 [drawer] core-toolbar {
-  color: #FAFAFA;
+  color: #ddd;
   background: #1a1c2e;
   font-weight: lighter;
 }
 
 [main] core-toolbar {
   background: #1a1c2e url("/images/galaxy_header.png") left no-repeat;
-  //padding-left: 1em;
   font-weight: lighter;
   font-size: 175%;
+  padding-left: 0.5em;
 }
 
 [drawer] core-toolbar {
   color: #FAFAFA;
   padding-left: 7px;
+  line-height: 36px;
 }
 
 [drawer] core-menu {
@@ -80,3 +81,17 @@ core-item#timerItem {
   position: absolute;
   bottom: 0px;
 }
+
+.location-info {
+  font-size:50%;
+  letter-spacing:1px;
+  padding-left: 2em;
+  padding-bottom: 5px;
+}
+
+#logo {
+  width: 67px;
+  height: 50px;
+  margin-left: 26px;
+}
+
