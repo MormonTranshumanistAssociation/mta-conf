@@ -2,12 +2,18 @@
   display: block;
 }
 
+:host h1, h3 { font-size: 100% }
+
 :host h1 {
-  font-size: 300%;
+  font-size: 4vw;
+}
+
+:host h3 {
+  font-size: 2.5vw;
 }
 
 :host #countdown {
-  font-size: 1500%;
+  font-size: 18vw;
 }
 
 :host .happy {
