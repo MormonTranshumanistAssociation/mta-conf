@@ -5,6 +5,15 @@
     <link rel="stylesheet" href="page-schedule.css">
     <firebase-element id="base" location="https://mta-conf.firebaseio.com/schedule/2015-04-03" data="{{data}}"
                       keys="{{keys}}"></firebase-element>
+    <firebase-login id="firebaseLogin" location="https://mta-conf.firebaseio.com/" provider="facebook"
+                    user="{{user}}" statusKnown="true" on-login="{{onLogin}}"
+                    on-logout="{{onLogout}}" on-error="{{onLoginError}}" params='{"scope": "email"}'></firebase-login>
+    <div layout horizontal end-justified>
+      <div>
+        <a class="signin-link" on-click="{{login}}" hidden?="{{user}}">Administer</a>
+        <a class="signout-link" on-click="{{logout}}" hidden?="{{!user}}">Sign Out</a>
+      </div>
+    </div>
     <table>
       <thead>
         <tr>
@@ -29,6 +38,21 @@
   <script>
     (function () {
       Polymer('page-schedule', {
+        login: function () {
+          this.$.firebaseLogin.login();
+        },
+        logout: function () {
+          this.$.firebaseLogin.logout();
+        },
+        onLogin: function (authInfo) {
+          console.log("onLogin", this.user);
+        },
+        onLogout: function (user) {
+          console.log("onLogout", user);
+        },
+        onLoginError: function (user) {
+          console.log("onLoginError", user);
+        },
         display: function (item) {
           if (item && (item.display || item.display === undefined)) {
             return true;
@@ -36,7 +60,7 @@
           return false;
         },
         ready: function () {
-
+          console.log("here");
         }
       });
     })();
