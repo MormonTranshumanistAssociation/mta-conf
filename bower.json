@@ -15,7 +15,6 @@
     "web-component-tester": "Polymer/web-component-tester#^2.2.3"
   },
   "resolutions": {
-    "core-component-page": "^0.5",
     "polymer": "^0.5.4"
   }
 }
