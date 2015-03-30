@@ -1,3 +1,5 @@
+<!-- TODO: add moment-timezone for proper timezone handling -->
+
 <link rel="import" href="../../bower_components/polymer/polymer.html">
 
 <polymer-element name="presentation-timer" attributes="">
@@ -92,9 +94,9 @@
             nothingIsHappening = true,
             nextEvent = null,
             timeDiff,
-            isDayOfEvent = (now > new Date(self.day + ' 00:00') && now < new Date(self.day + ' 23:59:59'));
+            isDayOfEvent = (now > new Date(self.day + 'T00:00') && now < new Date(self.day + 'T23:59:59'));
           if (!isDayOfEvent) {
-            timeDiff = self.getTimeDifference(now, new Date(Date.parse(self.day + ' 09:00')));
+            timeDiff = self.getTimeDifference(now, new Date(Date.parse(self.day + 'T09:00')));
             self.theTitle = 'The conference will begin at 9:00am MST on April 3, 2015.';
             self.timeLeft = timeDiff.duration;
           }
@@ -103,8 +105,8 @@
           }
           if (isDayOfEvent && self.data) {
             self.data.forEach(function (element) {
-              var start = new Date(Date.parse(self.day + ' ' + element.start)),
-                end = new Date(Date.parse(self.day + ' ' + element.end)),
+              var start = new Date(Date.parse(self.day + 'T' + element.start)),
+                end = new Date(Date.parse(self.day + 'T' + element.end)),
                 duration = self.getTimeDifference(start, end);
               if (now >= start && now <= end) {
                 nothingIsHappening = false;
