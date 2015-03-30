@@ -25,7 +25,6 @@
       },
       {
         "end": "09:40",
-        "presenter": "The Four Hoarsemen",
         "start": "09:35",
         "title": "Musical performance: The Morning Breaks"
       },
@@ -105,65 +104,82 @@
       {
         "end": "12:58",
         "presenter": "Jordan Harmon",
+        "portrait": "https://mta-conf.firebaseapp.com/images/jordan_harmon.jpg",
+        "bio": "Jordan Harmon is a licensed clinical social worker, currently providing psychotherapy at New Roads Behavioral Health. He also has a part-time private practice, counseling individuals and couples struggling with depression, anxiety, addiction, and relationship concerns. Jordan’s research and practice interests include; contextual behaviorism, empathy, contemplative practices, psychological flexibility, and theories of systemic transformation. He received a BS in sociology from Brigham Young University in 2002, and a master’s degree in social work from the University of South Carolina in 2009. Jordan lives in Provo with his wife and three kids.",
         "start": "12:40",
         "title": "The problem of problem solving: contextual behavioral science and implications for human thriving"
       },
       {
         "end": "13:18",
         "presenter": "Rachel Stone",
+        "portrait": "https://mta-conf.firebaseapp.com/images/rachel_stone.jpg",
+        "bio": "Rachel Stone does midnight brainstorms about technological government. Her life is impromptu, but she can usually be found running much of the BYU PoliSci show, grading papers, or soda sipping in downtown Provo. She would like to throw parties like Katherine Graham, check her email like Hillary Clinton, and read people as well as Brandon Stanton. See [rachelintheworld.com](http://rachelintheworld.com/) for more.",
         "start": "13:00",
         "title": "Ask Siri: A Glimpse of Tomorrow's Technological Government"
       },
       {
         "end": "13:38",
         "presenter": "Michaelann Bradley",
+        "portrait": "https://mta-conf.firebaseapp.com/images/michaelann_bradley.jpg",
+        "bio": "Michaelann Bradley manages the marketing and communications for United Way of Utah County, which includes responsibility for 5 different social media platforms. She is also a spiritual care giver at a local hospital and serves as treasurer of the nonprofit group LDS Earth Stewardship. She and her husband Don live in Provo, Utah.",
         "start": "13:20",
         "title": "Leveraging Social Media to Bridge the Digital Divide"
       },
       {
         "end": "13:45",
-        "presenter": "The Four Hoarsemen",
         "start": "13:40",
         "title": "Musical performance: It's Only a Paper Moon"
       },
       {
         "end": "14:03",
         "presenter": "Micah Redding",
+        "portrait": "https://mta-conf.firebaseapp.com/images/micah_redding.jpg",
+        "bio": "​Micah Redding is a software developer and writer on the subject of human values and technology. He grew up as a preacher’s kid, spent eight years as a rock musician, and has traveled extensively, to places such as Kathmandu, Afghanistan, and the coast of Africa. In 2012, he found himself in Tahrir Square during the first election after the Egyptian revolution. He lives in Nashville, Tennessee, where he has helped to organize vibrant inter-religious dialogue, cutting-edge art events, and public conversations on the technological singularity and the future of the human race. He has been active in promoting and working with a large annual charity walk, and in 2014, co-founded the Christian Transhumanist Association to further public discourse on religion, technology, and the future of humanity.",
         "start": "13:45",
         "title": "The Urgent Need for Christian Transhumanism"
       },
       {
         "end": "14:23",
         "presenter": "Dorothy Deasy",
+        "portrait": "https://mta-conf.firebaseapp.com/images/dorothy_deasy.jpg",
+        "bio": "Dorothy Deasy is a Christian Existentialist Universalist, aspiring Spiritual Director and freelance design researcher. She has a BS in Industrial / Organizational Psychology and a Masters of Applied Theology where her thesis was on spirituality for a transhuman age. She is Secretary of the now-forming Christian Transhumanist Association, and Secretary and Board Member of the Mormon Transhumanist Association. She lives in Vancouver, WA.",
         "start": "14:05",
         "title": "Joining Together"
       },
       {
         "end": "14:43",
         "presenter": "James Carroll",
+        "portrait": "https://mta-conf.firebaseapp.com/images/james_carroll.jpg",
+        "bio": "James has a PhD in computer science, and a minor in Ancient Near Eastern history. As a graduate student he taught Pearl of Great Price, Isaiah, and the Book of Mormon in the BYU Ancient Scripture department. He is currently working at the Los Alamos National Laboratory, doing ensemble machine learning research and computer assisted radiographic analysis for nuclear stockpile stewardship. His interests include machine learning, statistics, linguistics, consciousness, comparative ritual, and photography.",
         "start": "14:25",
         "title": "The End of Religious Anxiety: Towards Religious Universalism"
       },
       {
         "end": "15:03",
         "presenter": "Joseph West",
+        "portrait": "https://mta-conf.firebaseapp.com/images/joseph_west.jpg",
+        "bio": "Joseph is a PhD candidate in the department of sociology at the University of Arizona. He received a Bachelors of Science degree in Philosophy from the University of Utah in 2007, and a Masters of Arts in Sociology from The University of Arizona in 2010. The primary thrust of his research focuses on religion, social networks, culture and social movement mobilization. He also has peripheral research interests in the sociology of science. Joseph is a single dad of two children.",
         "start": "14:45",
         "title": "The Demands of Authentic Mormonism"
       },
       {
         "end": "15:10",
         "start": "15:05",
-        "title": "5 minute break (assign someone to help clean up from lunch so that we can leave immediately at 5:30pm)"
+        "title": "Break"
       },
       {
         "end": "15:28",
         "presenter": "Caleb Jones",
+        "portrait": "https://mta-conf.firebaseapp.com/images/caleb_jones.jpg",
+        "bio": "Caleb Jones is a husband, father, programmer, and member of the LDS Church. He has a Computer Science degree from BYU. He is passionate about science and religion; a critic of rigidity, he enjoys exploring the strengths and limits of both, and sees the two as necessary and complementary in constructing enlightening, inspirational narratives. He is influenced by futurists like Freeman Dyson and Peter Diamandis, and Mormons like James E. Talmage and Neal A. Maxwell.",
         "start": "15:10",
         "title": "Mormonism and the Fractal Lineage of Gods"
       },
       {
         "end": "16:15",
         "presenter": "Ralph Merkle",
+        "portrait": "https://mta-conf.firebaseapp.com/images/ralph_merkle.jpg",
+        "bio": "Ralph co-invented public key cryptography, invented cryptographic hash trees, and more recently became a researcher and speaker on molecular nanotechnology and cryonics. In 1988, he became a research scientist at Xerox PARC. In 1999 he became a nanotechnology theorist for Zyvex. In 2003 he became a Distinguished Professor of Computing at Georgia Tech. In 2006 he returned to the Bay Area, where he is a Senior Research Fellow at the Institute for Molecular Manufacturing, on the faculty at Singularity University, a Director of Alcor, and a co-founder of the Nanofactory Collaboration.  He’s received the Feynman Prize, the ACM's Kanellakis Award, the IEEE Kobayashi Award, the RSA Award, and the IEEE Hamming Award. He’s a Fellow of the IACR, of the Computer History Museum, and a National Inventor’s Hall of Fame Inductee. His home page is [www.merkle.com](http://merkle.com/).",
         "start": "15:30",
         "title": "Keynote address"
       },
@@ -186,7 +202,6 @@
       },
       {
         "end": "17:25",
-        "presenter": "The Four Hoarsemen",
         "start": "17:20",
         "title": "Musical performance: Go the Distance"
       },
