@@ -45,6 +45,13 @@
 
           //  Format Duration
           //  -------------------------------------------------------------------  //
+
+          //  Format Days
+          var daytext = '';
+          if (oDiff.days > 0) {
+            daytext = String(oDiff.days) + 'd ';
+          }
+
           //  Format Hours
           var hourtext = '00';
           if (oDiff.hours > 0) {
@@ -73,18 +80,23 @@
           }
 
           //  Set Duration
-          var sDuration = hourtext + ':' + mintext + ':' + sectext;
+          var sDuration = daytext + hourtext + ':' + mintext + ':' + sectext;
           oDiff.duration = sDuration;
           //  -------------------------------------------------------------------  //
 
           return oDiff;
         },
         updateValues: function () {
-          var self = this, now = new Date(), nothingIsHappening = true, nextEvent = null;
-          var isDayOfEvent = (now > new Date(self.day + ' 00:00') && now < new Date(self.day + ' 23:59:59'));
+          var self = this,
+            now = new Date(),
+            nothingIsHappening = true,
+            nextEvent = null,
+            timeDiff,
+            isDayOfEvent = (now > new Date(self.day + ' 00:00') && now < new Date(self.day + ' 23:59:59'));
           if (!isDayOfEvent) {
+            timeDiff = self.getTimeDifference(now, new Date(Date.parse(self.day + ' 09:00')));
             self.theTitle = 'The conference will begin at 9:00am MST on April 3, 2015.';
-            self.timeLeft = undefined;
+            self.timeLeft = timeDiff.duration;
           }
           else {
             self.theTitle = 'Nothing is happening.';
@@ -93,7 +105,7 @@
             self.data.forEach(function (element) {
               var start = new Date(Date.parse(self.day + ' ' + element.start)),
                 end = new Date(Date.parse(self.day + ' ' + element.end)),
-                timeDiff, duration = self.getTimeDifference(start, end);
+                duration = self.getTimeDifference(start, end);
               if (now >= start && now <= end) {
                 nothingIsHappening = false;
                 self.theTitle = element.title;
