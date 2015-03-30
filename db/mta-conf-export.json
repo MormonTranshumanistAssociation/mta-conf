@@ -1,164 +1,213 @@
 {
-  "schedule" : {
-    "2015-04-03" : [ {
-      "display" : false,
-      "end" : "09:00",
-      "start" : "0:00",
-      "title" : "The 2015 MTA conference will begin in..."
-    }, {
-      "end" : "09:18",
-      "presenter" : "Lincoln Cannon",
-      "start" : "09:00",
-      "title" : "State of the Association"
-    }, {
-      "end" : "09:33",
-      "presenter" : "Brent Allsop",
-      "start" : "09:20",
-      "title" : "2014 membership survey results"
-    }, {
-      "end" : "09:40",
-      "presenter" : "The Four Hoarsemen",
-      "start" : "09:35",
-      "title" : "Musical performance: The Morning Breaks"
-    }, {
-      "end" : "09:58",
-      "presenter" : "Ben Blair",
-      "start" : "09:40",
-      "title" : "Come Follow Me: The Instrumental Atonement"
-    }, {
-      "end" : "10:18",
-      "presenter" : "Carl Youngblood",
-      "start" : "10:00",
-      "title" : "Transhumanism and Cheap Grace: Applying Bonhoeffer’s Insights to Transhumanist Ethics"
-    }, {
-      "end" : "10:38",
-      "presenter" : "Chris Bradford",
-      "start" : "10:20",
-      "title" : "Divine Aspirations: Creation, Ritual, and Authority"
-    }, {
-      "end" : "10:58",
-      "presenter" : "Don Bradley",
-      "start" : "10:40",
-      "title" : "An Experiment Upon the Word: Scientific Discourse and Methodology in Alma 32"
-    }, {
-      "end" : "11:45",
-      "presenter" : "Kristine Haglund",
-      "start" : "11:00",
-      "title" : "Keynote: 'Whatsoever Love Elects to Bless': Baroque, Romantic, Transhumanist and Mormon Expressions of Abundance"
-    }, {
-      "end" : "12:00",
-      "presenter" : "Kristine Haglund",
-      "start" : "11:45",
-      "title" : "Q&A"
-    }, {
-      "end" : "12:15",
-      "start" : "12:00",
-      "title" : "Lunch"
-    }, {
-      "end" : "12:25",
-      "presenter" : "Hank Pellissier",
-      "start" : "12:15",
-      "title" : "Report on MTA humanitarian projects"
-    }, {
-      "end" : "12:28",
-      "presenter" : "Roger Hansen",
-      "start" : "12:25",
-      "title" : "Q&A for Hank's talk"
-    }, {
-      "end" : "12:40",
-      "presenter" : "Kathy Wilson",
-      "start" : "12:30",
-      "title" : "Report on humanitarian work in India"
-    }, {
-      "end" : "12:58",
-      "presenter" : "Jordan Harmon",
-      "start" : "12:40",
-      "title" : "The problem of problem solving: contextual behavioral science and implications for human thriving"
-    }, {
-      "end" : "13:18",
-      "presenter" : "Rachel Stone",
-      "start" : "13:00",
-      "title" : "Ask Siri: A Glimpse of Tomorrow's Technological Government"
-    }, {
-      "end" : "13:38",
-      "presenter" : "Michaelann Bradley",
-      "start" : "13:20",
-      "title" : "Leveraging Social Media to Bridge the Digital Divide"
-    }, {
-      "end" : "13:45",
-      "presenter" : "The Four Hoarsemen",
-      "start" : "13:40",
-      "title" : "Musical performance: It's Only a Paper Moon"
-    }, {
-      "end" : "14:03",
-      "presenter" : "Micah Redding",
-      "start" : "13:45",
-      "title" : "The Urgent Need for Christian Transhumanism"
-    }, {
-      "end" : "14:23",
-      "presenter" : "Dorothy Deasy",
-      "start" : "14:05",
-      "title" : "Joining Together"
-    }, {
-      "end" : "14:43",
-      "presenter" : "James Carroll",
-      "start" : "14:25",
-      "title" : "The End of Religious Anxiety: Towards Religious Universalism"
-    }, {
-      "end" : "15:03",
-      "presenter" : "Joseph West",
-      "start" : "14:45",
-      "title" : "The Demands of Authentic Mormonism"
-    }, {
-      "end" : "15:10",
-      "start" : "15:05",
-      "title" : "5 minute break"
-    }, {
-      "end" : "15:28",
-      "presenter" : "Caleb Jones",
-      "start" : "15:10",
-      "title" : "Mormonism and the Fractal Lineage of Gods"
-    }, {
-      "end" : "16:15",
-      "presenter" : "Ralph Merkle",
-      "start" : "15:30",
-      "title" : "Keynote address"
-    }, {
-      "end" : "16:30",
-      "presenter" : "Ralph Merkle",
-      "start" : "16:15",
-      "title" : "Q&A"
-    }, {
-      "end" : "17:15",
-      "start" : "16:30",
-      "title" : "Panel discussion with Lincoln Cannon, Kristine Haglund and Ralph Merkle"
-    }, {
-      "end" : "17:20",
-      "presenter" : "Lincoln Cannon",
-      "start" : "17:15",
-      "title" : "Closing Remarks"
-    }, {
-      "end" : "17:25",
-      "presenter" : "The Four Hoarsemen",
-      "start" : "17:20",
-      "title" : "Musical performance: Go the Distance"
-    }, {
-      "end" : "17:30",
-      "start" : "17:25",
-      "title" : "Mingle"
-    }, {
-      "end" : "19:00",
-      "start" : "17:30",
-      "title" : "Exit the building"
-    }, {
-      "end" : "22:00",
-      "start" : "19:00",
-      "title" : "Catered dinner at the Joseph Smith Memorial Building, Presidents Room"
-    }, {
-      "display" : false,
-      "end" : "23:49",
-      "start" : "22:41",
-      "title" : "The conference is over."
-    } ]
+  "schedule": {
+    "2015-04-03": [
+      {
+        "end": "09:00",
+        "start": "0:00",
+        "title": "The 2015 MTA conference will begin in...",
+        "display": false
+      },
+      {
+        "end": "09:18",
+        "presenter": "Lincoln Cannon",
+        "portrait": "http://cloud.metacannon.net/images/blog-lincoln/lincoln-cannon.jpg",
+        "bio": "is a philosopher and programmer, passionate about technology, spirituality, science and religion. He is a professional software engineer, Internet marketer and information technologist, with extensive experience leading technical teams in development and integration of web and mobile systems. In his spare time, he serves as president of the Mormon Transhumanist Association. He holds a masters degree in business and a bachelors degree in philosophy from Brigham Young University. Lincoln is married with Dorothée Vankrieckenge, a French national, and is father to three bilingual children.",
+        "start": "09:00",
+        "title": "State of the Association"
+      },
+      {
+        "end": "09:33",
+        "presenter": "Brent Allsop",
+        "portrait": "https://mta-conf.firebaseapp.com/images/brent_allsop.jpg",
+        "bio": "Brent Allsop was born and raise in the LDS church in SLC, Utah.  He serviced a mission to Japan Sendai, 1978-80.  He received is BS in Computer Science from the University of Utah in 1985.  He is married to Malia Allsop and has 3 adult children living in Sandy Utah.  Brent is the founder of Canoizer.com and currently working as a senior Software Engineer at 3M Health Information Systems.",
+        "start": "09:20",
+        "title": "2014 membership survey results"
+      },
+      {
+        "end": "09:40",
+        "presenter": "The Four Hoarsemen",
+        "start": "09:35",
+        "title": "Musical performance: The Morning Breaks"
+      },
+      {
+        "end": "09:58",
+        "presenter": "Ben Blair",
+        "portrait": "https://mta-conf.firebaseapp.com/images/ben_blair.jpg",
+        "bio": "Ben Blair produces [Olive Us](http://oliveus.tv/), an award-winning online video series featuring his six children. He is married to [Gabrielle Blair](http://designmom.com/). He holds an M.A. and PhD in Philosophy and Education from Teachers College, Columbia University.",
+        "start": "09:40",
+        "title": "Come Follow Me: The Instrumental Atonement"
+      },
+      {
+        "end": "10:18",
+        "presenter": "Carl Youngblood",
+        "portrait": "https://mta-conf.firebaseapp.com/images/carl_youngblood.jpg",
+        "bio": "Carl Youngblood is a technology enthusiast, and has worked as a software engineer since 1997. He was an LDS missionary in Brazil. He has a degree in Portuguese from BYU, and a masters in Computer Science from University of Washington. Carl's struggle to apply faith meaningfully in a fast-changing world led him to co-found the Mormon Transhumanist Association, where he is VP and board member. Carl loves science, technology, religion, philosophy and performing arts.",
+        "start": "10:00",
+        "title": "Transhumanism and Cheap Grace: Applying Bonhoeffer’s Insights to Transhumanist Ethics"
+      },
+      {
+        "end": "10:38",
+        "presenter": "Chris Bradford",
+        "portrait": "https://mta-conf.firebaseapp.com/images/chris_bradford.jpg",
+        "bio": "Chris Bradford was born in Utah, but soon moved to Washington, D.C. and overseas. He has lived in Egypt, Germany, Jordan, Pakistan and Italy, where he served an LDS mission. A self-taught programmer, Chris is a VP of Engineering at Ancestry.com. He has a Linguistics degree from BYU. He and wife Lucy have eight children. Chris loves science, technology, religion, philosophy, and performing arts. He is a board member of the Mormon Transhumanist Association.",
+        "start": "10:20",
+        "title": "Divine Aspirations: Creation, Ritual, and Authority"
+      },
+      {
+        "end": "10:58",
+        "presenter": "Don Bradley",
+        "portrait": "https://mta-conf.firebaseapp.com/images/don_bradley.jpg",
+        "bio": "Don Bradley is a writer, editor, and researcher specializing in Mormon origins. He completed an internship with the Joseph Smith Papers Project, is finalizing his History M.A. thesis at Utah State University, and plans to pursue a doctorate in religious studies. Don has published several papers, including "
+        'The Grand Fundamental Principles of Mormonism': Joseph
+        Smith
+        's Unfinished Reformation," and will soon publish his first book, "The Lost 116 Pages: Rediscovering the Book of Lehi." Beyond academia, Don is a single dad and a happy victim of the Flynn effect, enjoying the struggle to keep up intellectually with two precocious sons.",
+        "start": "10:40",
+        "title": "An Experiment Upon the Word: Scientific Discourse and Methodology in Alma 32"
+      },
+      {
+        "end": "11:45",
+        "presenter": "Kristine Haglund",
+        "portrait": "https://mta-conf.firebaseapp.com/images/kristine_haglund.jpg",
+        "bio": "Kristine is the current editor of Dialogue: A Journal of Mormon Thought, an essayist at the weblogs By Common Consent and Times and Seasons, and a noted Mormon historian and cultural commentator. She has suggested that the \"experience of independent Mormon publishing [can provide] ... a potential model\" for Mormons \"at a moment where new kinds of assimilation are called for.\" Kristine has an A.B. from Harvard in German Studies and an M.A. from the University of Michigan in German Literature. As part of her application for the editor position at Dialogue, she wrote, \"Many, many people long for a way to acknowledge the flaws of the church, to think and speak critically about silly aspects of our culture, and assess the inevitable mistakes of human leaders trying to interpret God's will, while still affirming the essential goodness of Mormonism. I've battled through some of the big issues — gender roles, homosexuality, intellectual freedom, historiography — and managed not just to stay in, but to stay happily.\"",
+        "start": "11:00",
+        "title": "'Whatsoever Love Elects to Bless': Baroque, Romantic, Transhumanist and Mormon Expressions of Abundance"
+      },
+      {
+        "end": "12:00",
+        "presenter": "Kristine Haglund",
+        "start": "11:45",
+        "title": "Q&A"
+      },
+      {
+        "end": "12:15",
+        "start": "12:00",
+        "title": "Lunch"
+      },
+      {
+        "end": "12:25",
+        "presenter": "Hank Pellissier",
+        "portrait": "https://mta-conf.firebaseapp.com/images/hank_pellissier.jpg",
+        "bio": "Hank Pellissier is the author of two e-books, *Invent Utopia Now* and *Why is the IQ of Ashkenazi Jews so High?* From Oct. 2012-February 2013, he was blog editor at Transhumanity.net. He is currently at BrighterBrains.org and serves as Manager of Humanitarian Projects for the Mormon Transhumanist Association. A journalist, Hank was the \"Local Intelligence\" columnist for the *New York Times* (San Francisco edition) and he’s a frequent contributor to GreatSchools.org. Past work includes a daily column for Salon.com (\"Naked World\"), two columns for SfGate.com (\"Urban Animal\" and \"Odd Barkings\"), and dozens of futurist articles for IEET, H+ Magazine, World Future Society, and Acceler8or, occasionally under his nom de plume, \"Hank Hyena.\"",
+        "start": "12:15",
+        "title": "Report on MTA humanitarian projects"
+      },
+      {
+        "end": "12:28",
+        "presenter": "Roger Hansen",
+        "portrait": "https://mta-conf.firebaseapp.com/images/roger_hansen.jpg",
+        "bio": "Roger is a water resource planner who recently retired after 35 years of service with the Federal government. He currently volunteers in Uganda and the Navajo Nation. Projects include installing solar-energy units, constructing small-scale water resource developments, and building outdoor playground equipment. He serves alongside Hank Pellissier on the MTA's humanitarian projects.",
+        "start": "12:25",
+        "title": "Q&A for Hank's talk"
+      },
+      {
+        "end": "12:40",
+        "presenter": "Kathy Wilson",
+        "start": "12:30",
+        "title": "Report on humanitarian work in India"
+      },
+      {
+        "end": "12:58",
+        "presenter": "Jordan Harmon",
+        "start": "12:40",
+        "title": "The problem of problem solving: contextual behavioral science and implications for human thriving"
+      },
+      {
+        "end": "13:18",
+        "presenter": "Rachel Stone",
+        "start": "13:00",
+        "title": "Ask Siri: A Glimpse of Tomorrow's Technological Government"
+      },
+      {
+        "end": "13:38",
+        "presenter": "Michaelann Bradley",
+        "start": "13:20",
+        "title": "Leveraging Social Media to Bridge the Digital Divide"
+      },
+      {
+        "end": "13:45",
+        "presenter": "The Four Hoarsemen",
+        "start": "13:40",
+        "title": "Musical performance: It's Only a Paper Moon"
+      },
+      {
+        "end": "14:03",
+        "presenter": "Micah Redding",
+        "start": "13:45",
+        "title": "The Urgent Need for Christian Transhumanism"
+      },
+      {
+        "end": "14:23",
+        "presenter": "Dorothy Deasy",
+        "start": "14:05",
+        "title": "Joining Together"
+      },
+      {
+        "end": "14:43",
+        "presenter": "James Carroll",
+        "start": "14:25",
+        "title": "The End of Religious Anxiety: Towards Religious Universalism"
+      },
+      {
+        "end": "15:03",
+        "presenter": "Joseph West",
+        "start": "14:45",
+        "title": "The Demands of Authentic Mormonism"
+      },
+      {
+        "end": "15:10",
+        "start": "15:05",
+        "title": "5 minute break (assign someone to help clean up from lunch so that we can leave immediately at 5:30pm)"
+      },
+      {
+        "end": "15:28",
+        "presenter": "Caleb Jones",
+        "start": "15:10",
+        "title": "Mormonism and the Fractal Lineage of Gods"
+      },
+      {
+        "end": "16:15",
+        "presenter": "Ralph Merkle",
+        "start": "15:30",
+        "title": "Keynote address"
+      },
+      {
+        "end": "16:30",
+        "presenter": "Ralph Merkle",
+        "start": "16:15",
+        "title": "Q&A"
+      },
+      {
+        "end": "17:15",
+        "start": "16:30",
+        "title": "Panel discussion with Lincoln Cannon, Kristine Haglund and Ralph Merkle"
+      },
+      {
+        "end": "17:20",
+        "presenter": "Lincoln Cannon",
+        "start": "17:15",
+        "title": "Closing Remarks"
+      },
+      {
+        "end": "17:25",
+        "presenter": "The Four Hoarsemen",
+        "start": "17:20",
+        "title": "Musical performance: Go the Distance"
+      },
+      {
+        "end": "17:30",
+        "start": "17:25",
+        "title": "Mingle"
+      },
+      {
+        "end": "19:00",
+        "start": "17:30",
+        "title": "Exit the building"
+      },
+      {
+        "end": "22:00",
+        "start": "19:00",
+        "title": "Catered dinner at the Joseph Smith Memorial Building, Presidents Room"
+      }
+    ]
   }
 }
