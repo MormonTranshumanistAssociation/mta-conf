@@ -1,0 +1,74 @@
+@import '../styles/base';
+
+:host {
+  background: #fcfcf5;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0;
+  color: $primary-color-lighter;
+}
+
+[main] core-toolbar,
+[drawer] core-toolbar {
+  color: $light-text;
+  background: $primary-color;
+  font-weight: lighter;
+}
+
+[main] core-toolbar {
+  background: $primary-color url("/images/galaxy_header.png") left no-repeat;
+  font-weight: lighter;
+  font-size: 175%;
+  padding-left: 0.5em;
+}
+
+[drawer] core-toolbar {
+  padding-left: 7px;
+  line-height: 36px;
+}
+
+[drawer] core-menu {
+  margin-left: 24px;
+  margin-top: 18px;
+}
+
+core-header-panel[drawer] {
+  background: $primary-color-lighter;
+  color: $primary-color-darker;
+  font-weight: lighter;
+}
+
+core-item {
+  letter-spacing: 1px;
+}
+
+core-item {
+  cursor: pointer !important;
+}
+
+core-item.core-selected {
+  letter-spacing: 0;
+}
+
+#main-content {
+  margin: 26px 26px;
+  color: $dark-text;
+}
+
+core-item#timerItem {
+  position: absolute;
+  bottom: 0;
+}
+
+.location-info {
+  font-size:50%;
+  letter-spacing:1px;
+  padding-left: 2em;
+  padding-bottom: 5px;
+}
+
+#logo {
+  width: 67px;
+  height: 50px;
+  margin-left: 26px;
+  margin-top: 8px;
+}

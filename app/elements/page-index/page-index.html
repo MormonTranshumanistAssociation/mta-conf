@@ -1,0 +1,61 @@
+<polymer-element name="page-index">
+
+  <template>
+    <link rel="stylesheet" href="page-index.css">
+
+    <polymer-cookie id="menuSelectionCookie" name="menuSelection"></polymer-cookie>
+
+    <core-drawer-panel id="menuDrawer" drawerWidth="150px" responsiveWidth="768px" forceNarrow="false">
+
+      <!-- Drawer -->
+      <core-header-panel drawer>
+
+        <!-- Drawer Toolbar -->
+        <core-toolbar>
+          <div hidden?="{{!$.menuDrawer.narrow}}">menu</div>
+          <a href="//transfigurism.org"><img id="logo" hidden?="{{$.menuDrawer.narrow}}" src="/images/mta_logo.png"></a>
+        </core-toolbar>
+
+        <!-- Drawer Content -->
+        <core-menu selected="{{$.menuSelectionCookie.value}}" fit>
+          <core-item label="Info"></core-item>
+          <core-item label="Schedule"></core-item>
+          <core-item label="Presenters"></core-item>
+          <core-item id="timerItem" label="Timer"></core-item>
+        </core-menu>
+
+      </core-header-panel>
+
+      <!-- Main -->
+      <core-header-panel main>
+
+        <!-- Main Toolbar -->
+        <core-toolbar>
+          <paper-icon-button icon="menu" core-drawer-toggle></paper-icon-button>
+          <div flex layout horizontal>
+            <div self-end>{{appName}}</div>
+            <!-- <div self-end class="location-info" hidden?="{{$.menuDrawer.narrow}}"> April 3 &#183; SLC Library</div> -->
+          </div>
+        </core-toolbar>
+
+        <!-- Main Content -->
+        <core-animated-pages id="main-content" selected="{{$.menuSelectionCookie.value}}">
+          <page-info></page-info>
+          <page-schedule></page-schedule>
+          <page-presenters></page-presenters>
+          <presentation-timer></presentation-timer>
+        </core-animated-pages>
+
+      </core-header-panel>
+    </core-drawer-panel>
+  </template>
+  <script>
+    Polymer({
+      ready: function () {
+        if(!this.$.menuSelectionCookie.value) {
+          this.$.menuSelectionCookie.value = 0;
+        }
+      }
+    });
+  </script>
+</polymer-element>
