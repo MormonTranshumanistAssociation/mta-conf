@@ -1,0 +1,59 @@
+<polymer-element name="twt-user-content" attributes="text">
+  <template>
+    <!-- only use these stylesheets if emoji mode is set to 'sprite' -->
+    <!-- <link rel="stylesheet" href="../bower_components/emojify.js/dist/css/sprites/emojify.min.css"> -->
+    <!-- <link rel="stylesheet" href="../bower_components/emojify.js/dist/css/sprites/emojify-emoticons.min.css"> -->
+    <style>
+      :host {display: block;}
+      .emoji {height: 1rem; width: 1rem; vertical-align: top; padding-top: 1px;}
+    </style>
+    <span id="user-content"></span>
+  </template>
+  <script>
+    Polymer('twt-user-content', {
+      log: console,
+      observe: {
+        'text': 'formatText'
+      },
+      ready: function () {
+
+        var self = this;
+
+        // Emojfy modes:
+        //   'sprite': All images are loaded in a single PNG file. Large file but faster once loaded. (Caching essential.)
+        //   'img': Images loaded directly. Only load images that are needed, but more loads if lots of emojis.
+        //   'data-uri': Image data included in CSS file. (Very large file.)
+        // If emojify mode is set to 'sprite' or 'data-uri', then have to include appropriate css
+        // from ../bower_components/emojify.js/dist/css
+        //
+        emojify.setConfig({mode: "img", img_dir: '/bower_components/emojify.js/dist/images/basic'});
+
+        // disable strong and em
+        var renderer = new marked.Renderer();
+        renderer.strong = function(text) { return text; };
+        renderer.em = function(text) { return text; };
+        // inserting spaces between paragraph open/close tags prevents issues with
+        // regex matching on emojies at the beginning or end of the paragraph
+        renderer.paragraph = function(text) { return "<p> " + text + " </p>";};
+        marked.setOptions({gfm: false, sanitize: true, smartypants: false, renderer: renderer});
+      },
+      formatText: function() {
+        var self = this;
+        var content = self.text;
+        self.$['user-content'].innerHTML = content;
+
+        marked(content, function(err, content) {  // convert markdown to html
+          if (err) {
+            self.log.error(err);
+          }
+          else {
+            content = linkify(content);         // convert URLs, emails, etc. to links
+            content = emojify.replace(content); // convert emoticons & emojies to images
+            //self.log.debug({original: self.text, formatted: content}, 'formatted text');
+            self.$['user-content'].innerHTML = content;
+          }
+        });
+      }
+    });
+  </script>
+</polymer-element>

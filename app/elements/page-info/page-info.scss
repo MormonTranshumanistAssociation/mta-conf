@@ -13,5 +13,8 @@
   font-size: 90%;
   presenter-bio {
     margin-bottom: 1.5em;
+    &::shadow .portrait img {
+      filter: none;
+    }
   }
 }

@@ -8,7 +8,7 @@
       <div class="info" flex>
         <div class="presenter">{{item.presenter}}</div>
         <div class="title"><time-formatter time="{{item.start}}"></time-formatter> — {{item.title}}</div>
-        <div class="bio">{{item.bio}}</div>
+        <div class="bio"><marked-element text="{{item.bio}}"></marked-element></div>
       </div>
     </div>
   </template>
