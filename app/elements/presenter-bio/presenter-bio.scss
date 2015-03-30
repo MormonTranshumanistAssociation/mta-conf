@@ -33,3 +33,12 @@
   margin-top: 0.5em;
   color: $dark-text-secondary;
 }
+
+:host /deep/ a {
+  color: $accent-color-lighter;
+  text-decoration: none;
+  &:hover {
+    color: $accent-color-lighter;
+    text-decoration: underline;
+  }
+}
