@@ -35,7 +35,7 @@
             timeLeft,
             isDayOfEvent = (now > self.eventDay && now < self.eventEndOfDay);
           if (!isDayOfEvent) {
-            self.theTitle = 'The conference will begin at 9:00am MST on April 3, 2015.';
+            self.theTitle = 'The conference will begin at 9:00am MDT on April 3, 2015.';
             self.timeLeft = moment.duration(self.eventStart.diff(now)).format("d[d] hh:mm:ss");
           }
           else {
