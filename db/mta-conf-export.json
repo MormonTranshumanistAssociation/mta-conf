@@ -18,31 +18,31 @@
       {
         "start": "09:20",
         "end": "09:33",
-        "presenter": "Brent Allsop",
-        "portrait": "https://mta-conf.firebaseapp.com/images/brent_allsop.jpg",
-        "bio": "Brent Allsop was born and raised in the LDS church in SLC, Utah.  He served a mission to Japan Sendai, 1978-80.  He received a B. S. in Computer Science from the [University of Utah](http://www.utah.edu/) in 1985.  He is married to Malia Allsop and has 3 adult children living in Sandy, Utah.  Brent is the founder of [Canonizer.com](http://canonizer.com) and currently working as a senior Software Engineer at [3M Health Information Systems](http://solutions.3m.com/wps/portal/3M/en_US/Health-Information-Systems/HIS/).",
-        "title": "2014 membership survey results"
-      },
-      {
-        "end": "09:40",
-        "start": "09:35",
-        "title": "Musical performance: The Morning Breaks"
-      },
-      {
-        "start": "09:40",
-        "end": "09:58",
         "title": "Transhumanism and Cheap Grace: Applying Bonhoeffer’s Insights to Transhumanist Ethics",
         "presenter": "Carl Youngblood",
         "portrait": "https://mta-conf.firebaseapp.com/images/carl_youngblood.jpg",
         "bio": "Carl Youngblood is a technology enthusiast, and has worked as a software engineer since 1997. He was an LDS missionary in Brazil. He has a degree in Portuguese from [BYU](http://home.byu.edu/home/), and a masters in Computer Science from University of Washington. Carl's struggle to apply faith meaningfully in a fast-changing world led him to co-found the [Mormon Transhumanist Association](http://transfigurism.org), where he is VP and board member. Carl loves science, technology, religion, philosophy and performing arts."
       },
       {
-        "start": "10:00",
-        "end": "10:18",
+        "start": "09:35",
+        "end": "09:40",
+        "title": "Musical performance: The Morning Breaks"
+      },
+      {
+        "start": "09:40",
+        "end": "09:58",
         "title": "Come Follow Me: The Instrumental Atonement",
         "presenter": "Ben Blair",
         "portrait": "https://mta-conf.firebaseapp.com/images/ben_blair.jpg",
         "bio": "Ben Blair produces [Olive Us](http://oliveus.tv/), an award-winning online video series featuring his six children. He is married to [Gabrielle Blair](http://designmom.com/). He holds an M.A. and PhD in Philosophy and Education from Teachers College, Columbia University."
+      },
+      {
+        "start": "10:00",
+        "end": "10:18",
+        "title": "Joining Together",
+        "presenter": "Dorothy Deasy",
+        "portrait": "https://mta-conf.firebaseapp.com/images/dorothy_deasy.jpg",
+        "bio": "Dorothy Deasy is a Christian Existentialist Universalist, aspiring Spiritual Director and freelance design researcher. She has a BS in Industrial / Organizational Psychology and a Masters of Applied Theology where her thesis was on spirituality for a transhuman age. She is Secretary of the now-forming [Christian Transhumanist Association](http://www.christiantranshumanism.org/), and Secretary and Board Member of the [Mormon Transhumanist Association](http://transfigurism.org). She lives in Vancouver, WA."
       },
       {
         "start": "10:20",
@@ -106,10 +106,10 @@
       {
         "start": "12:40",
         "end": "12:58",
-        "title": "The problem of problem solving: contextual behavioral science and implications for human thriving",
-        "presenter": "Jordan Harmon",
-        "portrait": "https://mta-conf.firebaseapp.com/images/jordan_harmon.jpg",
-        "bio": "Jordan Harmon is a licensed clinical social worker, currently providing psychotherapy at [New Roads Behavioral Health](http://newroadstreatment.com/). He also has a part-time private practice, counseling individuals and couples struggling with depression, anxiety, addiction, and relationship concerns. Jordan’s research and practice interests include; contextual behaviorism, empathy, contemplative practices, psychological flexibility, and theories of systemic transformation. He received a BS in sociology from [Brigham Young University](http://home.byu.edu/home/) in 2002, and a master’s degree in social work from the [University of South Carolina](http://www.sc.edu/) in 2009. Jordan lives in Provo with his wife and three kids."
+        "title": "2014 membership survey results",
+        "presenter": "Brent Allsop",
+        "portrait": "https://mta-conf.firebaseapp.com/images/brent_allsop.jpg",
+        "bio": "Brent Allsop was born and raised in the LDS church in SLC, Utah.  He served a mission to Japan Sendai, 1978-80.  He received a B. S. in Computer Science from the [University of Utah](http://www.utah.edu/) in 1985.  He is married to Malia Allsop and has 3 adult children living in Sandy, Utah.  Brent is the founder of [Canonizer.com](http://canonizer.com) and currently working as a senior Software Engineer at [3M Health Information Systems](http://solutions.3m.com/wps/portal/3M/en_US/Health-Information-Systems/HIS/)."
       },
       {
         "start": "13:00",
@@ -122,10 +122,10 @@
       {
         "start": "13:20",
         "end": "13:38",
-        "title": "Joining Together",
-        "presenter": "Dorothy Deasy",
-        "portrait": "https://mta-conf.firebaseapp.com/images/dorothy_deasy.jpg",
-        "bio": "Dorothy Deasy is a Christian Existentialist Universalist, aspiring Spiritual Director and freelance design researcher. She has a BS in Industrial / Organizational Psychology and a Masters of Applied Theology where her thesis was on spirituality for a transhuman age. She is Secretary of the now-forming [Christian Transhumanist Association](http://www.christiantranshumanism.org/), and Secretary and Board Member of the [Mormon Transhumanist Association](http://transfigurism.org). She lives in Vancouver, WA."
+        "title": "The problem of problem solving: contextual behavioral science and implications for human thriving",
+        "presenter": "Jordan Harmon",
+        "portrait": "https://mta-conf.firebaseapp.com/images/jordan_harmon.jpg",
+        "bio": "Jordan Harmon is a licensed clinical social worker, currently providing psychotherapy at [New Roads Behavioral Health](http://newroadstreatment.com/). He also has a part-time private practice, counseling individuals and couples struggling with depression, anxiety, addiction, and relationship concerns. Jordan’s research and practice interests include; contextual behaviorism, empathy, contemplative practices, psychological flexibility, and theories of systemic transformation. He received a BS in sociology from [Brigham Young University](http://home.byu.edu/home/) in 2002, and a master’s degree in social work from the [University of South Carolina](http://www.sc.edu/) in 2009. Jordan lives in Provo with his wife and three kids."
       },
       {
         "start": "13:40",
@@ -225,6 +225,12 @@
         "end": "22:00",
         "title": "Catered dinner at the Joseph Smith Memorial Building, Presidents Room",
         "display": "break"
+      },
+      {
+        "start": "22:00",
+        "end": "23:59:59",
+        "title": "The conference is over",
+        "display": "hidden"
       }
     ]
   }

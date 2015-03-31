@@ -22,111 +22,51 @@
     (function () {
       Polymer({
         almostOutOfTime: false,
-        day: '2015-04-03',
+        day: "2015-04-03",
+        eventDay: null,
+        eventStart: null,
+        eventEndOfDay: null,
         theTitle: 'The Title',
         timeLeft: '',
-        getTimeDifference: function (earlierDate, laterDate) {
-          var oDiff = {};
-
-          //  Calculate Differences
-          //  -------------------------------------------------------------------  //
-          var nTotalDiff = laterDate.getTime() - earlierDate.getTime();
-          oDiff.totalSeconds = nTotalDiff / 1000;
-
-          oDiff.days = Math.floor(nTotalDiff / 1000 / 60 / 60 / 24);
-          nTotalDiff -= oDiff.days * 1000 * 60 * 60 * 24;
-
-          oDiff.hours = Math.floor(nTotalDiff / 1000 / 60 / 60);
-          nTotalDiff -= oDiff.hours * 1000 * 60 * 60;
-
-          oDiff.minutes = Math.floor(nTotalDiff / 1000 / 60);
-          nTotalDiff -= oDiff.minutes * 1000 * 60;
-
-          oDiff.seconds = Math.floor(nTotalDiff / 1000);
-          //  -------------------------------------------------------------------  //
-
-          //  Format Duration
-          //  -------------------------------------------------------------------  //
-
-          //  Format Days
-          var daytext = '';
-          if (oDiff.days > 0) {
-            daytext = String(oDiff.days) + 'd ';
-          }
-
-          //  Format Hours
-          var hourtext = '00';
-          if (oDiff.hours > 0) {
-            hourtext = String(oDiff.hours);
-          }
-          if (hourtext.length === 1) {
-            hourtext = '0' + hourtext;
-          }
-
-          //  Format Minutes
-          var mintext = '00';
-          if (oDiff.minutes > 0) {
-            mintext = String(oDiff.minutes);
-          }
-          if (mintext.length === 1) {
-            mintext = '0' + mintext;
-          }
-
-          //  Format Seconds
-          var sectext = '00';
-          if (oDiff.seconds > 0) {
-            sectext = String(oDiff.seconds);
-          }
-          if (sectext.length === 1) {
-            sectext = '0' + sectext;
-          }
-
-          //  Set Duration
-          var sDuration = daytext + hourtext + ':' + mintext + ':' + sectext;
-          oDiff.duration = sDuration;
-          //  -------------------------------------------------------------------  //
-
-          return oDiff;
-        },
         updateValues: function () {
           var self = this,
-            now = new Date(),
+            now = moment(),
             nothingIsHappening = true,
             nextEvent = null,
-            timeDiff,
-            isDayOfEvent = (now > new Date(self.day + 'T00:00') && now < new Date(self.day + 'T23:59:59'));
+            timeLeft,
+            isDayOfEvent = (now > self.eventDay && now < self.eventEndOfDay);
           if (!isDayOfEvent) {
-            timeDiff = self.getTimeDifference(now, new Date(Date.parse(self.day + 'T09:00')));
+            timeDiff = moment().diff(self.eventStart);
             self.theTitle = 'The conference will begin at 9:00am MST on April 3, 2015.';
-            self.timeLeft = timeDiff.duration;
+            self.timeLeft = moment.duration(self.eventStart.diff(now)).format("d[d] hh:mm:ss");
           }
           else {
             self.theTitle = 'Nothing is happening.';
           }
           if (isDayOfEvent && self.data) {
             self.data.forEach(function (element) {
-              var start = new Date(Date.parse(self.day + 'T' + element.start)),
-                end = new Date(Date.parse(self.day + 'T' + element.end)),
-                duration = self.getTimeDifference(start, end);
+              var start = moment(self.day + ' ' + element.start, "YYYY-MM-DD HH:mm"),
+                end = moment(self.day + ' ' + element.end, "YYYY-MM-DD HH:mm"),
+                duration = moment.duration(end.diff(start));
               if (now >= start && now <= end) {
                 nothingIsHappening = false;
                 self.theTitle = element.title;
                 self.presenter = element.presenter;
                 self.portrait = element.portrait;
-                timeDiff = self.getTimeDifference(now, end);
-                if (timeDiff.totalSeconds <= duration.totalSeconds * 0.1) {
+                timeLeft = moment.duration(end.diff(now));
+                if (timeLeft.asSeconds() <= duration.asSeconds() * 0.1) {
                   self.almostOutOfTime = true;
                 } else {
                   self.almostOutOfTime = false;
                 }
-                self.timeLeft = timeDiff.duration;
+                self.timeLeft = timeLeft.format("d[d] hh:mm:ss");
               }
               if (!nextEvent && nothingIsHappening && start > now) {
                 nextEvent = element.presenter ? 'Up next...' : element.title + ' starts in';
-                timeDiff = self.getTimeDifference(now, start);
+                timeLeft = moment.duration(start.diff(now)).format("d[d] hh:mm:ss");
                 self.presenter = element.presenter;
                 self.portrait = element.portrait;
-                self.timeLeft = timeDiff.duration;
+                self.timeLeft = timeLeft;
                 self.theTitle = nextEvent;
                 self.almostOutOfTime = false;
               }
@@ -135,6 +75,11 @@
           this.async(this.updateValues, null, 1000);
         },
         ready: function () {
+          this.eventDay = moment.tz(this.day, "America/Denver");
+          this.eventEndOfDay = moment.tz(this.day, "America/Denver");
+          this.eventDay.startOf('day');
+          this.eventEndOfDay.endOf('day');
+          this.eventStart = moment.tz(this.day + " 09:00", "America/Denver");
           this.async(this.updateValues);
         }
       });
