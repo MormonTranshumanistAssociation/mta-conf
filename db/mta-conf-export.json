@@ -2,25 +2,25 @@
   "schedule": {
     "2015-04-03": [
       {
-        "end": "09:00",
         "start": "0:00",
+        "end": "09:00",
         "title": "The 2015 MTA Conference will begin in...",
         "display": "hidden"
       },
       {
+        "start": "09:00",
         "end": "09:18",
+        "title": "State of the Association",
         "presenter": "Lincoln Cannon",
         "portrait": "https://mta-conf.firebaseapp.com/images/lincoln-cannon.jpg",
-        "bio": "Lincoln is a philosopher and programmer, passionate about technology, spirituality, science and religion. He is a professional software engineer, Internet marketer and information technologist, with extensive experience leading technical teams in development and integration of web and mobile systems. In his spare time, he serves as president of the Mormon Transhumanist Association. He holds a masters degree in business and a bachelors degree in philosophy from Brigham Young University. Lincoln is married with Dorothée Vankrieckenge, a French national, and is father to three bilingual children.",
-        "start": "09:00",
-        "title": "State of the Association"
+        "bio": "Lincoln is a philosopher and programmer, passionate about technology, spirituality, science and religion. He is a professional software engineer, Internet marketer and information technologist, with extensive experience leading technical teams in development and integration of web and mobile systems. In his spare time, he serves as president of the [Mormon Transhumanist Association](http://transfigurism.org). He holds a masters degree in business and a bachelors degree in philosophy from [Brigham Young University](http://home.byu.edu/home/). Lincoln is married with Dorothée Vankrieckenge, a French national, and is father to three bilingual children."
       },
       {
+        "start": "09:20",
         "end": "09:33",
         "presenter": "Brent Allsop",
         "portrait": "https://mta-conf.firebaseapp.com/images/brent_allsop.jpg",
-        "bio": "Brent Allsop was born and raise in the LDS church in SLC, Utah.  He serviced a mission to Japan Sendai, 1978-80.  He received is BS in Computer Science from the University of Utah in 1985.  He is married to Malia Allsop and has 3 adult children living in Sandy Utah.  Brent is the founder of Canoizer.com and currently working as a senior Software Engineer at 3M Health Information Systems.",
-        "start": "09:20",
+        "bio": "Brent Allsop was born and raised in the LDS church in SLC, Utah.  He served a mission to Japan Sendai, 1978-80.  He received a B. S. in Computer Science from the [University of Utah](http://www.utah.edu/) in 1985.  He is married to Malia Allsop and has 3 adult children living in Sandy, Utah.  Brent is the founder of [Canonizer.com](http://canonizer.com) and currently working as a senior Software Engineer at [3M Health Information Systems](http://solutions.3m.com/wps/portal/3M/en_US/Health-Information-Systems/HIS/).",
         "title": "2014 membership survey results"
       },
       {
@@ -29,200 +29,200 @@
         "title": "Musical performance: The Morning Breaks"
       },
       {
-        "end": "09:58",
-        "presenter": "Ben Blair",
-        "portrait": "https://mta-conf.firebaseapp.com/images/ben_blair.jpg",
-        "bio": "Ben Blair produces [Olive Us](http://oliveus.tv/), an award-winning online video series featuring his six children. He is married to [Gabrielle Blair](http://designmom.com/). He holds an M.A. and PhD in Philosophy and Education from Teachers College, Columbia University.",
         "start": "09:40",
-        "title": "Come Follow Me: The Instrumental Atonement"
-      },
-      {
-        "end": "10:18",
+        "end": "09:58",
+        "title": "Transhumanism and Cheap Grace: Applying Bonhoeffer’s Insights to Transhumanist Ethics",
         "presenter": "Carl Youngblood",
         "portrait": "https://mta-conf.firebaseapp.com/images/carl_youngblood.jpg",
-        "bio": "Carl Youngblood is a technology enthusiast, and has worked as a software engineer since 1997. He was an LDS missionary in Brazil. He has a degree in Portuguese from BYU, and a masters in Computer Science from University of Washington. Carl's struggle to apply faith meaningfully in a fast-changing world led him to co-found the Mormon Transhumanist Association, where he is VP and board member. Carl loves science, technology, religion, philosophy and performing arts.",
-        "start": "10:00",
-        "title": "Transhumanism and Cheap Grace: Applying Bonhoeffer’s Insights to Transhumanist Ethics"
+        "bio": "Carl Youngblood is a technology enthusiast, and has worked as a software engineer since 1997. He was an LDS missionary in Brazil. He has a degree in Portuguese from [BYU](http://home.byu.edu/home/), and a masters in Computer Science from University of Washington. Carl's struggle to apply faith meaningfully in a fast-changing world led him to co-found the [Mormon Transhumanist Association](http://transfigurism.org), where he is VP and board member. Carl loves science, technology, religion, philosophy and performing arts."
       },
       {
+        "start": "10:00",
+        "end": "10:18",
+        "title": "Come Follow Me: The Instrumental Atonement",
+        "presenter": "Ben Blair",
+        "portrait": "https://mta-conf.firebaseapp.com/images/ben_blair.jpg",
+        "bio": "Ben Blair produces [Olive Us](http://oliveus.tv/), an award-winning online video series featuring his six children. He is married to [Gabrielle Blair](http://designmom.com/). He holds an M.A. and PhD in Philosophy and Education from Teachers College, Columbia University."
+      },
+      {
+        "start": "10:20",
         "end": "10:38",
+        "title": "Divine Aspirations: Creation, Ritual, and Authority",
         "presenter": "Chris Bradford",
         "portrait": "https://mta-conf.firebaseapp.com/images/chris_bradford.jpg",
-        "bio": "Chris Bradford was born in Utah, but soon moved to Washington, D.C. and overseas. He has lived in Egypt, Germany, Jordan, Pakistan and Italy, where he served an LDS mission. A self-taught programmer, Chris is a VP of Engineering at Ancestry.com. He has a Linguistics degree from BYU. He and wife Lucy have eight children. Chris loves science, technology, religion, philosophy, and performing arts. He is a board member of the Mormon Transhumanist Association.",
-        "start": "10:20",
-        "title": "Divine Aspirations: Creation, Ritual, and Authority"
+        "bio": "Chris Bradford was born in Utah, but soon moved to Washington, D.C. and overseas. He has lived in Egypt, Germany, Jordan, Pakistan and Italy, where he served an LDS mission. A self-taught programmer, Chris is a VP of Engineering at Ancestry.com. He has a Linguistics degree from [BYU](http://home.byu.edu/home/). He and wife Lucy have eight children. Chris loves science, technology, religion, philosophy, and performing arts. He is a board member of the [Mormon Transhumanist Association](http://transfigurism.org)."
       },
       {
+        "start": "10:40",
         "end": "10:58",
+        "title": "An Experiment Upon the Word: Scientific Discourse and Methodology in Alma 32",
         "presenter": "Don Bradley",
         "portrait": "https://mta-conf.firebaseapp.com/images/don_bradley.jpg",
-        "bio": "Don Bradley is a writer, editor, and researcher specializing in Mormon origins. He completed an internship with the Joseph Smith Papers Project, is finalizing his History M.A. thesis at Utah State University, and plans to pursue a doctorate in religious studies. Don has published several papers, including \"'The Grand Fundamental Principles of Mormonism': Joseph Smith's Unfinished Reformation,\" and will soon publish his first book, \"The Lost 116 Pages: Rediscovering the Book of Lehi.\" Beyond academia, Don is a single dad and a happy victim of the Flynn effect, enjoying the struggle to keep up intellectually with two precocious sons.",
-        "start": "10:40",
-        "title": "An Experiment Upon the Word: Scientific Discourse and Methodology in Alma 32"
+        "bio": "Don Bradley is a writer, editor, and researcher specializing in Mormon origins. He completed an internship with the [Joseph Smith Papers Project](http://josephsmithpapers.org/), is finalizing his History M.A. thesis at [Utah State University](http://www.usu.edu/), and plans to pursue a doctorate in religious studies. Don has published several papers, including [\"'The Grand Fundamental Principles of Mormonism': Joseph Smith's Unfinished Reformation,\"](https://www.sunstonemagazine.com/pdf/141-32-41.pdf) and will soon publish his first book, *The Lost 116 Pages: Rediscovering the Book of Lehi.* Beyond academia, Don is a single dad and a happy victim of [the Flynn effect](http://en.wikipedia.org/wiki/Flynn_effect), enjoying the struggle to keep up intellectually with two precocious sons."
       },
       {
+        "start": "11:00",
         "end": "11:45",
         "presenter": "Kristine Haglund",
+        "title": "'Whatsoever Love Elects to Bless': Baroque, Romantic, Transhumanist and Mormon Expressions of Abundance",
         "portrait": "https://mta-conf.firebaseapp.com/images/kristine_haglund.jpg",
-        "bio": "Kristine is the current editor of Dialogue: A Journal of Mormon Thought, an essayist at the weblogs By Common Consent and Times and Seasons, and a noted Mormon historian and cultural commentator. She has suggested that the \"experience of independent Mormon publishing [can provide] ... a potential model\" for Mormons \"at a moment where new kinds of assimilation are called for.\" Kristine has an A.B. from Harvard in German Studies and an M.A. from the University of Michigan in German Literature. As part of her application for the editor position at Dialogue, she wrote, \"Many, many people long for a way to acknowledge the flaws of the church, to think and speak critically about silly aspects of our culture, and assess the inevitable mistakes of human leaders trying to interpret God's will, while still affirming the essential goodness of Mormonism. I've battled through some of the big issues — gender roles, homosexuality, intellectual freedom, historiography — and managed not just to stay in, but to stay happily.\"",
-        "start": "11:00",
-        "title": "'Whatsoever Love Elects to Bless': Baroque, Romantic, Transhumanist and Mormon Expressions of Abundance"
+        "bio": "Kristine is the current editor of [*Dialogue: A Journal of Mormon Thought*](https://www.dialoguejournal.com/), an essayist at the weblogs [By Common Consent](http://bycommonconsent.com/) and [Times and Seasons](http://timesandseasons.org/), and a noted Mormon historian and cultural commentator. She has suggested that the \"experience of independent Mormon publishing [can provide] ... a potential model\" for Mormons \"at a moment where new kinds of assimilation are called for.\" Kristine has an A.B. from [Harvard](http://www.harvard.edu/) in German Studies and an M.A. from the [University of Michigan](https://www.umich.edu/) in German Literature. As part of her application for the editor position at Dialogue, she wrote, \"Many, many people long for a way to acknowledge the flaws of the church, to think and speak critically about silly aspects of our culture, and assess the inevitable mistakes of human leaders trying to interpret God's will, while still affirming the essential goodness of Mormonism. I've battled through some of the big issues—gender roles, homosexuality, intellectual freedom, historiography—and managed not just to stay in, but to stay happily.\""
       },
       {
-        "end": "12:00",
-        "presenter": "Kristine Haglund",
         "start": "11:45",
+        "end": "12:00",
         "title": "Q&A",
+        "presenter": "Kristine Haglund",
         "keynote": true
       },
       {
-        "end": "12:15",
         "start": "12:00",
+        "end": "12:15",
         "title": "Lunch",
         "display": "break"
       },
       {
+        "start": "12:15",
         "end": "12:25",
+        "title": "Report on MTA humanitarian projects",
         "presenter": "Hank Pellissier",
         "portrait": "https://mta-conf.firebaseapp.com/images/hank_pellissier.jpg",
-        "bio": "Hank Pellissier is the author of two e-books, *Invent Utopia Now* and *Why is the IQ of Ashkenazi Jews so High?* From Oct. 2012-February 2013, he was blog editor at Transhumanity.net. He is currently at BrighterBrains.org and serves as Manager of Humanitarian Projects for the Mormon Transhumanist Association. A journalist, Hank was the \"Local Intelligence\" columnist for the *New York Times* (San Francisco edition) and he’s a frequent contributor to GreatSchools.org. Past work includes a daily column for Salon.com (\"Naked World\"), two columns for SfGate.com (\"Urban Animal\" and \"Odd Barkings\"), and dozens of futurist articles for IEET, H+ Magazine, World Future Society, and Acceler8or, occasionally under his nom de plume, \"Hank Hyena.\"",
-        "start": "12:15",
-        "title": "Report on MTA humanitarian projects"
+        "bio": "Hank Pellissier is the author of two e-books, [*Invent Utopia Now*](http://www.amazon.com/Invent-Utopia-Transhumanist-Suggestions-Pre-Singularity-ebook/dp/B00JL4P5I8) and [*Why is the IQ of Ashkenazi Jews so High?*](http://www.amazon.com/Why-IQ-Ashkenazi-Jews-High-ebook/dp/B00JTN4JL0) From Oct. 2012-February 2013, he was blog editor at [Transhumanity.net](http://transhumanity.net/). He is currently at [BrighterBrains.org](http://brighterbrains.org/) and serves as Manager of Humanitarian Projects for the [Mormon Transhumanist Association](http://transfigurism.org). A journalist, Hank was the \"Local Intelligence\" columnist for the *New York Times* (San Francisco edition) and he’s a frequent contributor to [GreatSchools.org](http://www.greatschools.org/). Past work includes a daily column for [Salon.com](http://www.salon.com/) (\"Naked World\"), two columns for [SfGate.com](http://www.sfgate.com/) (\"Urban Animal\" and \"Odd Barkings\"), and dozens of futurist articles for [IEET](http://ieet.org/), [H+ Magazine](http://humanityplus.org/), [World Future Society](http://www.wfs.org/), and [Acceler8or](http://www.acceler8or.com/), occasionally under his nom de plume, \"Hank Hyena.\""
       },
       {
+        "start": "12:25",
         "end": "12:28",
+        "title": "Q&A for Hank's talk",
         "presenter": "Roger Hansen",
         "portrait": "https://mta-conf.firebaseapp.com/images/roger_hansen.jpg",
-        "bio": "Roger is a water resource planner who recently retired after 35 years of service with the Federal government. He currently volunteers in Uganda and the Navajo Nation. Projects include installing solar-energy units, constructing small-scale water resource developments, and building outdoor playground equipment. He serves alongside Hank Pellissier on the MTA's humanitarian projects.",
-        "start": "12:25",
-        "title": "Q&A for Hank's talk"
+        "bio": "Roger is a water resource planner who recently retired after 35 years of service with the Federal government. He currently volunteers in Uganda and the Navajo Nation. Projects include installing solar-energy units, constructing small-scale water resource developments, and building outdoor playground equipment. He serves alongside Hank Pellissier on the MTA's humanitarian projects."
       },
       {
-        "end": "12:40",
-        "presenter": "Kathy Wilson",
         "start": "12:30",
-        "title": "Report on humanitarian work in India"
+        "end": "12:40",
+        "title": "Report on humanitarian work in India",
+        "presenter": "Kathy Wilson"
       },
       {
+        "start": "12:40",
         "end": "12:58",
+        "title": "The problem of problem solving: contextual behavioral science and implications for human thriving",
         "presenter": "Jordan Harmon",
         "portrait": "https://mta-conf.firebaseapp.com/images/jordan_harmon.jpg",
-        "bio": "Jordan Harmon is a licensed clinical social worker, currently providing psychotherapy at New Roads Behavioral Health. He also has a part-time private practice, counseling individuals and couples struggling with depression, anxiety, addiction, and relationship concerns. Jordan’s research and practice interests include; contextual behaviorism, empathy, contemplative practices, psychological flexibility, and theories of systemic transformation. He received a BS in sociology from Brigham Young University in 2002, and a master’s degree in social work from the University of South Carolina in 2009. Jordan lives in Provo with his wife and three kids.",
-        "start": "12:40",
-        "title": "The problem of problem solving: contextual behavioral science and implications for human thriving"
+        "bio": "Jordan Harmon is a licensed clinical social worker, currently providing psychotherapy at [New Roads Behavioral Health](http://newroadstreatment.com/). He also has a part-time private practice, counseling individuals and couples struggling with depression, anxiety, addiction, and relationship concerns. Jordan’s research and practice interests include; contextual behaviorism, empathy, contemplative practices, psychological flexibility, and theories of systemic transformation. He received a BS in sociology from [Brigham Young University](http://home.byu.edu/home/) in 2002, and a master’s degree in social work from the [University of South Carolina](http://www.sc.edu/) in 2009. Jordan lives in Provo with his wife and three kids."
       },
       {
+        "start": "13:00",
         "end": "13:18",
         "presenter": "Rachel Stone",
+        "title": "Ask Siri: A Glimpse of Tomorrow's Technological Government",
         "portrait": "https://mta-conf.firebaseapp.com/images/rachel_stone.jpg",
-        "bio": "Rachel Stone does midnight brainstorms about technological government. Her life is impromptu, but she can usually be found running much of the BYU PoliSci show, grading papers, or soda sipping in downtown Provo. She would like to throw parties like Katherine Graham, check her email like Hillary Clinton, and read people as well as Brandon Stanton. See [rachelintheworld.com](http://rachelintheworld.com/) for more.",
-        "start": "13:00",
-        "title": "Ask Siri: A Glimpse of Tomorrow's Technological Government"
+        "bio": "Rachel Stone does midnight brainstorms about technological government. Her life is impromptu, but she can usually be found running much of the BYU PoliSci show, grading papers, or soda sipping in downtown Provo. She would like to throw parties like Katherine Graham, check her email like Hillary Clinton, and read people as well as Brandon Stanton. See [rachelintheworld.com](http://rachelintheworld.com/) for more."
       },
       {
-        "end": "13:38",
-        "presenter": "Michaelann Bradley",
-        "portrait": "https://mta-conf.firebaseapp.com/images/michaelann_bradley.jpg",
-        "bio": "Michaelann Bradley manages the marketing and communications for United Way of Utah County, which includes responsibility for 5 different social media platforms. She is also a spiritual care giver at a local hospital and serves as treasurer of the nonprofit group LDS Earth Stewardship. She and her husband Don live in Provo, Utah.",
         "start": "13:20",
-        "title": "Social Mind Upload: Unleashing our Empathy"
+        "end": "13:38",
+        "title": "Joining Together",
+        "presenter": "Dorothy Deasy",
+        "portrait": "https://mta-conf.firebaseapp.com/images/dorothy_deasy.jpg",
+        "bio": "Dorothy Deasy is a Christian Existentialist Universalist, aspiring Spiritual Director and freelance design researcher. She has a BS in Industrial / Organizational Psychology and a Masters of Applied Theology where her thesis was on spirituality for a transhuman age. She is Secretary of the now-forming [Christian Transhumanist Association](http://www.christiantranshumanism.org/), and Secretary and Board Member of the [Mormon Transhumanist Association](http://transfigurism.org). She lives in Vancouver, WA."
       },
       {
-        "end": "13:45",
         "start": "13:40",
+        "end": "13:45",
         "title": "Musical performance: It's Only a Paper Moon"
       },
       {
+        "start": "13:45",
         "end": "14:03",
+        "title": "The Urgent Need for Christian Transhumanism",
         "presenter": "Micah Redding",
         "portrait": "https://mta-conf.firebaseapp.com/images/micah_redding.jpg",
-        "bio": "​Micah Redding is a software developer and writer on the subject of human values and technology. He grew up as a preacher’s kid, spent eight years as a rock musician, and has traveled extensively, to places such as Kathmandu, Afghanistan, and the coast of Africa. In 2012, he found himself in Tahrir Square during the first election after the Egyptian revolution. He lives in Nashville, Tennessee, where he has helped to organize vibrant inter-religious dialogue, cutting-edge art events, and public conversations on the technological singularity and the future of the human race. He has been active in promoting and working with a large annual charity walk, and in 2014, co-founded the Christian Transhumanist Association to further public discourse on religion, technology, and the future of humanity.",
-        "start": "13:45",
-        "title": "The Urgent Need for Christian Transhumanism"
+        "bio": "​Micah Redding is a software developer and writer on the subject of human values and technology. He grew up as a preacher’s kid, spent eight years as a rock musician, and has traveled extensively, to places such as Kathmandu, Afghanistan, and the coast of Africa. In 2012, he found himself in Tahrir Square during the first election after the Egyptian revolution. He lives in Nashville, Tennessee, where he has helped to organize vibrant inter-religious dialogue, cutting-edge art events, and public conversations on the technological singularity and the future of the human race. He has been active in promoting and working with a large annual charity walk, and in 2014, co-founded the [Christian Transhumanist Association](http://www.christiantranshumanism.org/) to further public discourse on religion, technology, and the future of humanity."
       },
       {
-        "end": "14:23",
-        "presenter": "Dorothy Deasy",
-        "portrait": "https://mta-conf.firebaseapp.com/images/dorothy_deasy.jpg",
-        "bio": "Dorothy Deasy is a Christian Existentialist Universalist, aspiring Spiritual Director and freelance design researcher. She has a BS in Industrial / Organizational Psychology and a Masters of Applied Theology where her thesis was on spirituality for a transhuman age. She is Secretary of the now-forming Christian Transhumanist Association, and Secretary and Board Member of the Mormon Transhumanist Association. She lives in Vancouver, WA.",
         "start": "14:05",
-        "title": "Joining Together"
+        "end": "14:23",
+        "title": "Social Mind Upload: Unleashing our Empathy",
+        "presenter": "Michaelann Bradley",
+        "portrait": "https://mta-conf.firebaseapp.com/images/michaelann_bradley.jpg",
+        "bio": "Michaelann Bradley manages the marketing and communications for [United Way of Utah County](https://www.unitedwayuc.org/), which includes responsibility for 5 different social media platforms. She is also a spiritual care giver at a local hospital and serves as treasurer of the nonprofit group [LDS Earth Stewardship](https://ldsearthstewardship.org/). She and her husband Don live in Provo, Utah."
       },
       {
+        "start": "14:25",
         "end": "14:43",
+        "title": "The End of Religious Anxiety: Towards Religious Universalism",
         "presenter": "James Carroll",
         "portrait": "https://mta-conf.firebaseapp.com/images/james_carroll.jpg",
-        "bio": "James has a PhD in computer science, and a minor in Ancient Near Eastern history. As a graduate student he taught Pearl of Great Price, Isaiah, and the Book of Mormon in the BYU Ancient Scripture department. He is currently working at the Los Alamos National Laboratory, doing ensemble machine learning research and computer assisted radiographic analysis for nuclear stockpile stewardship. His interests include machine learning, statistics, linguistics, consciousness, comparative ritual, and photography.",
-        "start": "14:25",
-        "title": "The End of Religious Anxiety: Towards Religious Universalism"
+        "bio": "James has a PhD in computer science, and a minor in Ancient Near Eastern history. As a graduate student he taught Pearl of Great Price, Isaiah, and the Book of Mormon in the [BYU](http://home.byu.edu/home/) Ancient Scripture department. He is currently working at the [Los Alamos National Laboratory](https://www.lanl.gov/), doing ensemble machine learning research and computer assisted radiographic analysis for nuclear stockpile stewardship. His interests include machine learning, statistics, linguistics, consciousness, comparative ritual, and photography."
       },
       {
+        "start": "14:45",
         "end": "15:03",
+        "title": "The Demands of Authentic Mormonism",
         "presenter": "Joseph West",
         "portrait": "https://mta-conf.firebaseapp.com/images/joseph_west.jpg",
-        "bio": "Joseph is a PhD candidate in the department of sociology at the University of Arizona. He received a Bachelors of Science degree in Philosophy from the University of Utah in 2007, and a Masters of Arts in Sociology from The University of Arizona in 2010. The primary thrust of his research focuses on religion, social networks, culture and social movement mobilization. He also has peripheral research interests in the sociology of science. Joseph is a single dad of two children.",
-        "start": "14:45",
-        "title": "The Demands of Authentic Mormonism"
+        "bio": "Joseph is a PhD candidate in the department of sociology at the [University of Arizona](http://www.arizona.edu/). He received a Bachelors of Science degree in Philosophy from the [University of Utah](http://www.utah.edu) in 2007, and a Masters of Arts in Sociology from The University of Arizona in 2010. The primary thrust of his research focuses on religion, social networks, culture and social movement mobilization. He also has peripheral research interests in the sociology of science. Joseph is a single dad of two children."
       },
       {
-        "end": "15:10",
         "start": "15:05",
+        "end": "15:10",
         "title": "Break",
         "display": "break"
       },
       {
+        "start": "15:10",
         "end": "15:28",
+        "title": "Mormonism and the Fractal Lineage of Gods",
         "presenter": "Caleb Jones",
         "portrait": "https://mta-conf.firebaseapp.com/images/caleb_jones.jpg",
-        "bio": "Caleb Jones is a husband, father, programmer, and member of the LDS Church. He has a Computer Science degree from BYU. He is passionate about science and religion; a critic of rigidity, he enjoys exploring the strengths and limits of both, and sees the two as necessary and complementary in constructing enlightening, inspirational narratives. He is influenced by futurists like Freeman Dyson and Peter Diamandis, and Mormons like James E. Talmage and Neal A. Maxwell.",
-        "start": "15:10",
-        "title": "Mormonism and the Fractal Lineage of Gods"
+        "bio": "Caleb Jones is a husband, father, programmer, and member of the LDS Church. He has a Computer Science degree from [BYU](http://home.byu.edu/home/). He is passionate about science and religion; a critic of rigidity, he enjoys exploring the strengths and limits of both, and sees the two as necessary and complementary in constructing enlightening, inspirational narratives. He is influenced by futurists like Freeman Dyson and Peter Diamandis, and Mormons like James E. Talmage and Neal A. Maxwell."
       },
       {
+        "start": "15:30",
         "end": "16:15",
+        "title": "Science, Technology, and Exaltation",
         "presenter": "Ralph Merkle",
         "portrait": "https://mta-conf.firebaseapp.com/images/ralph_merkle.jpg",
-        "bio": "Ralph co-invented public key cryptography, invented cryptographic hash trees, and more recently became a researcher and speaker on molecular nanotechnology and cryonics. In 1988, he became a research scientist at Xerox PARC. In 1999 he became a nanotechnology theorist for Zyvex. In 2003 he became a Distinguished Professor of Computing at Georgia Tech. In 2006 he returned to the Bay Area, where he is a Senior Research Fellow at the Institute for Molecular Manufacturing, on the faculty at Singularity University, a Director of Alcor, and a co-founder of the Nanofactory Collaboration.  He’s received the Feynman Prize, the ACM's Kanellakis Award, the IEEE Kobayashi Award, the RSA Award, and the IEEE Hamming Award. He’s a Fellow of the IACR, of the Computer History Museum, and a National Inventor’s Hall of Fame Inductee. His home page is [www.merkle.com](http://merkle.com/).",
-        "start": "15:30",
-        "title": "Keynote address"
+        "bio": "Ralph co-invented [public key cryptography](http://en.wikipedia.org/wiki/Public-key_cryptography), invented [cryptographic hash trees](http://en.wikipedia.org/wiki/Merkle_tree), and more recently became a researcher and speaker on molecular nanotechnology and cryonics. In 1988, he became a research scientist at [Xerox PARC](http://en.wikipedia.org/wiki/PARC_%28company%29). In 1999 he became a nanotechnology theorist for [Zyvex](http://www.zyvex.com/). In 2003 he became a Distinguished Professor of Computing at [Georgia Tech](http://www.gatech.edu/). In 2006 he returned to the Bay Area, where he is a Senior Research Fellow at the [Institute for Molecular Manufacturing](http://www.imm.org/), on the faculty at [Singularity University](http://singularityu.org/), a Director of [Alcor](http://www.alcor.org/), and a co-founder of the [Nanofactory Collaboration](http://www.molecularassembler.com/Nanofactory/).  He’s received the [Feynman Prize](http://www.foresight.org/FI/fi_spons.html), the [ACM](http://www.acm.org/)'s [Kanellakis Award](http://awards.acm.org/kanellakis/), the [IEEE](https://www.ieee.org/index.html) [Kobayashi Award](http://www.ieee.org/about/awards/tfas/kobayashi.html), the RSA Award, and the IEEE [Hamming Award](http://www.ieee.org/about/awards/medals/hamming.html). He’s a Fellow of the [IACR](https://www.iacr.org/), of the [Computer History Museum](http://www.computerhistory.org/), and a [National Inventor’s Hall of Fame](http://invent.org/) Inductee. His home page is [www.merkle.com](http://merkle.com/)."
       },
       {
-        "end": "16:30",
-        "presenter": "Ralph Merkle",
         "start": "16:15",
+        "end": "16:30",
         "title": "Q&A",
+        "presenter": "Ralph Merkle",
         "keynote": true
       },
       {
-        "end": "17:15",
         "start": "16:30",
+        "end": "17:15",
         "title": "Panel discussion with Lincoln Cannon, Kristine Haglund and Ralph Merkle"
       },
       {
-        "end": "17:20",
-        "presenter": "Lincoln Cannon",
         "start": "17:15",
-        "title": "Closing Remarks"
+        "end": "17:20",
+        "title": "Closing Remarks",
+        "presenter": "Lincoln Cannon"
       },
       {
-        "end": "17:25",
         "start": "17:20",
+        "end": "17:25",
         "title": "Musical performance: Go the Distance"
       },
       {
-        "end": "17:30",
         "start": "17:25",
+        "end": "17:30",
         "title": "Mingle",
         "display": "break"
       },
       {
-        "end": "19:00",
         "start": "17:30",
+        "end": "19:00",
         "title": "Exit the building"
       },
       {
-        "end": "22:00",
         "start": "19:00",
+        "end": "22:00",
         "title": "Catered dinner at the Joseph Smith Memorial Building, Presidents Room",
         "display": "break"
       }
