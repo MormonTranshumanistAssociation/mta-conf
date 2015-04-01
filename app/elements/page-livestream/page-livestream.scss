@@ -1,3 +1,19 @@
 :host {
   display: block;
 }
+
+iframe {
+  width: 300px;
+  height: 168px;
+  border: none;
+}
+
+@media only screen and (min-width: 640px) {
+
+  iframe {
+    width: 500px;
+    height: 281px;
+  }
+}
+
+

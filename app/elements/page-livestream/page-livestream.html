@@ -2,15 +2,16 @@
 
 <polymer-element name="page-livestream" attributes="">
   <template>
-    <script src="https://player.viewer.dacast.com/js/load_player.js?v=345"></script>
-    <link rel="stylesheet" href="page-livestream.scss">
-    <script id="34736_c_64117" width="768" height="432"
-            src="//player.viewer.dacast.com/js/dacast_player.js" class="dacast-video"></script>
+    <link rel="stylesheet" href="page-livestream.css">
+    <iframe src="http://static.viewer.dacast.com/b/34736/c/64117"
+            scrolling="no" allowfullscreen
+            webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
   </template>
   <script>
     (function () {
       Polymer({
-        // define element prototype here
+        ready: function () {
+        }
       });
     })();
   </script>
