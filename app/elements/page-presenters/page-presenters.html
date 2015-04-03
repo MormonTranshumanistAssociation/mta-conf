@@ -3,13 +3,44 @@
 <polymer-element name="page-presenters" attributes="">
   <template>
     <link rel="stylesheet" href="page-presenters.css">
-    <div>Presenters</div>
+    <firebase-element id="base-presenters" location="https://mta-conf.firebaseio.com/schedule/2015-04-03" data="{{data}}"
+                      keys="{{keys}}" orderByChild="'presenter'"></firebase-element>
+    <h2>Presenters</h2>
+    <ul id="presenters">
+      <template repeat="{{item in data}}">
+        <template if="{{item.bio}}">
+          <li layout horizontal>
+            <presenter-bio item="{{item}}"></presenter-bio>
+          </li>
+        </template>
+      </template>
+    </ul>
   </template>
   <script>
     (function () {
-      Polymer({
+      Polymer('page-presenters', {
+        login: function () {
+          this.$.firebaseLogin.login();
+        },
+        logout: function () {
+          this.$.firebaseLogin.logout();
+        },
+        onLogin: function () {
+          console.log('onLogin', this.user);
+        },
+        onLogout: function (user) {
+          console.log('onLogout', user);
+        },
+        onLoginError: function (user) {
+          console.log('onLoginError', user);
+        },
+        display: function (item) {
+          if (item && (item.display || item.display === undefined)) {
+            return true;
+          }
+          return false;
+        },
         ready: function () {
-
         }
       });
     })();

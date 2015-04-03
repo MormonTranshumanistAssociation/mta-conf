@@ -5,21 +5,22 @@
     <link rel="stylesheet" href="presentation-timer.css">
     <firebase-element id="base" location="https://mta-conf.firebaseio.com/schedule/2015-04-03" data="{{data}}"
                       keys="{{keys}}"></firebase-element>
-    <div id="marquee" class="{{ {happy: !almostOutOfTime, warning: almostOutOfTime} | tokenList}}" horizontal layout fit>
-      <div flex self-center>
-        <h1>{{theTitle}}</h1>
-        <template if="{{presenter}}">
-          <h3>{{presenter}}</h3>
-        </template>
-        <div id="countdown">{{timeLeft}}</div>
+      <div id="marquee" class="{{ {happy: !almostOutOfTime, warning: almostOutOfTime} | tokenList}}" horizontal layout fullbleed>
+        <div flex self-center>
+          <h1>{{theTitle}}</h1>
+          <template if="{{presenter}}">
+            <img src="{{portrait}}">
+            <h3>{{presenter}}</h3>
+          </template>
+          <div id="countdown">{{timeLeft}}</div>
+        </div>
       </div>
-    </div>
   </template>
   <script>
     (function () {
       Polymer({
         almostOutOfTime: false,
-        day: '2015-03-29',
+        day: '2015-04-03',
         theTitle: 'The Title',
         timeLeft: '',
         getTimeDifference: function (earlierDate, laterDate) {
@@ -80,8 +81,15 @@
         },
         updateValues: function () {
           var self = this, now = new Date(), nothingIsHappening = true, nextEvent = null;
-          self.theTitle = 'Nothing is happening';
-          if (self.data) {
+          var isDayOfEvent = (now > new Date(self.day + ' 00:00') && now < new Date(self.day + ' 23:59:59'));
+          if (!isDayOfEvent) {
+            self.theTitle = 'The conference will begin at 9:00am MST on April 3, 2015.';
+            self.timeLeft = undefined;
+          }
+          else {
+            self.theTitle = 'Nothing is happening.';
+          }
+          if (isDayOfEvent && self.data) {
             self.data.forEach(function (element) {
               var start = new Date(Date.parse(self.day + ' ' + element.start)),
                 end = new Date(Date.parse(self.day + ' ' + element.end)),
@@ -89,9 +97,8 @@
               if (now >= start && now <= end) {
                 nothingIsHappening = false;
                 self.theTitle = element.title;
-                if (element.presenter) {
-                  self.presenter = element.presenter;
-                }
+                self.presenter = element.presenter;
+                self.portrait = element.portrait;
                 timeDiff = self.getTimeDifference(now, end);
                 if (timeDiff.totalSeconds <= duration.totalSeconds * 0.1) {
                   self.almostOutOfTime = true;
@@ -101,8 +108,10 @@
                 self.timeLeft = timeDiff.duration;
               }
               if (!nextEvent && nothingIsHappening && start > now) {
-                nextEvent = 'Next: "' + element.title + '" Starting in:';
+                nextEvent = element.presenter ? 'Up next...' : element.title + ' starts in';
                 timeDiff = self.getTimeDifference(now, start);
+                self.presenter = element.presenter;
+                self.portrait = element.portrait;
                 self.timeLeft = timeDiff.duration;
                 self.theTitle = nextEvent;
                 self.almostOutOfTime = false;

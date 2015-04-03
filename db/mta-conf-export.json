@@ -4,14 +4,14 @@
       {
         "end": "09:00",
         "start": "0:00",
-        "title": "The 2015 MTA conference will begin in...",
-        "display": false
+        "title": "The 2015 MTA Conference will begin in...",
+        "display": "hidden"
       },
       {
         "end": "09:18",
         "presenter": "Lincoln Cannon",
         "portrait": "http://cloud.metacannon.net/images/blog-lincoln/lincoln-cannon.jpg",
-        "bio": "is a philosopher and programmer, passionate about technology, spirituality, science and religion. He is a professional software engineer, Internet marketer and information technologist, with extensive experience leading technical teams in development and integration of web and mobile systems. In his spare time, he serves as president of the Mormon Transhumanist Association. He holds a masters degree in business and a bachelors degree in philosophy from Brigham Young University. Lincoln is married with Dorothée Vankrieckenge, a French national, and is father to three bilingual children.",
+        "bio": "Lincoln is a philosopher and programmer, passionate about technology, spirituality, science and religion. He is a professional software engineer, Internet marketer and information technologist, with extensive experience leading technical teams in development and integration of web and mobile systems. In his spare time, he serves as president of the Mormon Transhumanist Association. He holds a masters degree in business and a bachelors degree in philosophy from Brigham Young University. Lincoln is married with Dorothée Vankrieckenge, a French national, and is father to three bilingual children.",
         "start": "09:00",
         "title": "State of the Association"
       },
@@ -72,12 +72,14 @@
         "end": "12:00",
         "presenter": "Kristine Haglund",
         "start": "11:45",
-        "title": "Q&A"
+        "title": "Q&A",
+        "keynote": true
       },
       {
         "end": "12:15",
         "start": "12:00",
-        "title": "Lunch"
+        "title": "Lunch",
+        "display": "break"
       },
       {
         "end": "12:25",
@@ -165,7 +167,8 @@
       {
         "end": "15:10",
         "start": "15:05",
-        "title": "Break"
+        "title": "Break",
+        "display": "break"
       },
       {
         "end": "15:28",
@@ -187,7 +190,8 @@
         "end": "16:30",
         "presenter": "Ralph Merkle",
         "start": "16:15",
-        "title": "Q&A"
+        "title": "Q&A",
+        "keynote": true
       },
       {
         "end": "17:15",
@@ -208,7 +212,8 @@
       {
         "end": "17:30",
         "start": "17:25",
-        "title": "Mingle"
+        "title": "Mingle",
+        "display": "break"
       },
       {
         "end": "19:00",
@@ -218,7 +223,8 @@
       {
         "end": "22:00",
         "start": "19:00",
-        "title": "Catered dinner at the Joseph Smith Memorial Building, Presidents Room"
+        "title": "Catered dinner at the Joseph Smith Memorial Building, Presidents Room",
+        "display": "break"
       }
     ]
   }

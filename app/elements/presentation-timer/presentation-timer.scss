@@ -1,32 +1,44 @@
+@import '../styles/base';
+
 :host {
   display: block;
+  background-color: $accent-color;
 }
 
-:host h1, h3 { font-size: 100% }
+//h1, h3 { font-size: 100% }
 
-:host h1 {
-  font-size: 4vw;
-}
-
-:host h3 {
-  font-size: 2.5vw;
-}
-
-:host #countdown {
-  font-size: 18vw;
-}
-
-:host .happy {
-  background-color: green;
-}
-
-:host .warning {
-  background-color: red;
-}
-
-:host #marquee {
-  font-family: Trebuchet, sans-serif;
+#marquee {
+  padding: 24px;
   color: white;
   text-align: center;
   border-radius:5px;
+  &.happy {
+    background-color: green;
+  }
+  &.warning {
+    background-color: red;
+  }
+
+  h1 {
+    font-size: 3vw;
+    font-weight: lighter;
+  }
+
+  h3 {
+    font-size: 2vw;
+    padding: 0;
+    margin-top: 1vw;
+    font-weight: lighter;
+  }
+
+  img {
+    max-height: 8vw;
+    max-width: 8vw;
+    border-radius: 5px;
+  }
+
+  #countdown {
+    font-size: 16vw;
+  }
+
 }

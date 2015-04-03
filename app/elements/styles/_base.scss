@@ -1,0 +1,11 @@
+@import 'variables';
+
+*,*::after,*::before {
+  box-sizing: border-box;
+}
+:host {
+  display: block;
+}
+paper-fab {
+  background-color: $accent-color;
+}

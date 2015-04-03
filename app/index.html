@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>#mtaconf 2015</title>
+  <title>#mtaconf</title>
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
   <!-- build:css styles/main.css -->
@@ -29,10 +29,13 @@
   <!-- will be replaced with elements/elements.vulcanized.html -->
   <link rel="import" href="elements/elements.html">
   <!-- endreplace-->
+
 </head>
 
 <body unresolved fullbleed layout vertical>
   <template is="auto-binding" id="app">
+
+    <polymer-cookie id="menuSelectionCookie" name="menuSelection"></polymer-cookie>
 
     <core-drawer-panel id="menuDrawer" drawerWidth="150px" responsiveWidth="768px" forceNarrow="false">
 
@@ -42,14 +45,14 @@
         <!-- Drawer Toolbar -->
         <core-toolbar>
           <div hidden?="{{!$.menuDrawer.narrow}}">menu</div>
-          <img id="logo" hidden?="{{$.menuDrawer.narrow}}" src="/images/mta_logo.png"></img>
+          <a href="//transfigurism.org"><img id="logo" hidden?="{{$.menuDrawer.narrow}}" src="/images/mta_logo.png"></img></a>
         </core-toolbar>
 
         <!-- Drawer Content -->
-        <core-menu selected="{{selected}}" fit>
+        <core-menu selected="{{$.menuSelectionCookie.value}}" fit>
+          <core-item label="Info"></core-item>
           <core-item label="Schedule"></core-item>
           <core-item label="Presenters"></core-item>
-          <core-item label="Info"></core-item>
           <core-item id="timerItem" label="Timer"></core-item>
         </core-menu>
 
@@ -65,16 +68,15 @@
               <div self-end>{{appName}}</div>
               <!-- <div self-end class="location-info" hidden?="{{$.menuDrawer.narrow}}"> April 3 &#183; SLC Library</div> -->
             </div>
-          </core-toolbar>
         </core-toolbar>
 
         <!-- Main Content -->
-        <core-pages selected="{{selected}}" fit>
+        <core-animated-pages id="main-content" selected="{{$.menuSelectionCookie.value}}">
+          <page-info></page-info>
           <page-schedule></page-schedule>
           <page-presenters></page-presenters>
-          <page-info></page-info>
           <presentation-timer></presentation-timer>
-        </core-pages>
+        </core-animated-pages>
 
       </core-header-panel>
     </core-drawer-panel>

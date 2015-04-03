@@ -1,19 +1,42 @@
+@import '../styles/base';
+
 :host {
-  display: block;
-  font-size: 90%;
+  font-size: 80%;
 }
 
-:host table {
-  border-spacing: 0;
-  border-collapse: collapse;
+#admin-login {
+  color: $dark-text-disabled;
+  &:hover {
+    text-decoration:underline;
+  }
+  cursor: pointer;
 }
 
-:host td, th {
-  display: table-cell;
-  border-bottom: 1px solid #dddddd;
-  padding: 8px 15px 8px 15px;
+ul {
+  padding: 0;
+  margin: 0;
+  max-width: 50em;
 }
 
-:host th {
-  text-align: left;
+li {
+  margin: 0 0 1em 0;
+  padding: 0;
+  &.break {
+    color: $accent-color-lighter;
+    margin: 1.5em 0 1.5em 0;
+  }
+  .start {
+    text-align: right;
+    padding-right: 1em;
+    width: 5em;
+  }
+  .info {
+    .presenter {
+      font-weight: bold;
+    }
+    .title {
+      font-style: italic;
+    }
+  }
 }
+

@@ -1,0 +1,23 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="presenter-bio" attributes="item">
+  <template>
+    <div layout horizontal>
+      <link rel="stylesheet" href="presenter-bio.css">
+      <div class="portrait" self-start><img src="{{item.portrait}}"></div>
+      <div class="info" flex>
+        <div class="presenter">{{item.presenter}}</div>
+        <div class="title"><time-formatter time="{{item.start}}"></time-formatter> — {{item.title}}</div>
+        <div class="bio">{{item.bio}}</div>
+      </div>
+    </div>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        ready: function () {
+        }
+      });
+    })();
+  </script>
+</polymer-element>

@@ -3,7 +3,32 @@
 <polymer-element name="page-info" attributes="">
   <template>
     <link rel="stylesheet" href="page-info.css">
-    <div>Info</div>
+    <h2>2015 Conference of the <br/>Mormon Transhumanism Association</h2>
+
+    <p>April 3, 2015</p>
+    <div>
+      <div>
+        Salt Lake City Public Library<br/>
+        Level 4 Conference Room<br/>
+        210 East 400 South<br/>
+        Salt Lake City, UT
+      </div>
+
+      <div id="register-button">
+        <a href="http://www.eventbrite.com/e/2015-conference-of-the-mormon-transhumanist-association-registration-15677843853?ref=ebtnebregn" target="_blank"><img src="https://www.eventbrite.com/custombutton?eid=15677843853" alt="Eventbrite - 2015 Conference of the Mormon Transhumanist Association" /></a>
+      </div>
+    </div>
+
+    <div class="keynotes">
+      <h2>Keynote Speakers</h2>
+      <firebase-element id="keynote-kristine" location="https://mta-conf.firebaseio.com/schedule/2015-04-03/8" data="{{kristine}}"></firebase-element>
+      <firebase-element id="keynote-ralph" location="https://mta-conf.firebaseio.com/schedule/2015-04-03/24" data="{{ralph}}"></firebase-element>
+
+      <presenter-bio item="{{kristine}}"></presenter-bio>
+      <presenter-bio item="{{ralph}}"></presenter-bio>
+
+    </div>
+
   </template>
   <script>
     (function () {

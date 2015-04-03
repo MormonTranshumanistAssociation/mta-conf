@@ -1,0 +1,11 @@
+@import '../styles/base';
+
+#presenters {
+  margin: 0;
+  padding: 0;
+}
+#presenters li {
+  padding-bottom: 2.5em;
+  font-size: 85%;
+  max-width: 40em;
+}

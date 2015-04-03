@@ -8,32 +8,28 @@
     <firebase-login id="firebaseLogin" location="https://mta-conf.firebaseio.com/" provider="facebook"
                     user="{{user}}" statusKnown="true" on-login="{{onLogin}}"
                     on-logout="{{onLogout}}" on-error="{{onLoginError}}" params='{"scope": "email"}'></firebase-login>
-    <div layout horizontal end-justified>
-      <div>
-        <a class="signin-link" on-click="{{login}}" hidden?="{{user}}">Administer</a>
+    <div layout horizontal style="width:100%;">
+      <div flex><h2>Schedule</h2></div>
+      <div id="admin-login" self-start>
+        <a class="signin-link" on-click="{{login}}" hidden?="{{user}}">Admin Login</a>
         <a class="signout-link" on-click="{{logout}}" hidden?="{{!user}}">Sign Out</a>
       </div>
     </div>
-    <table>
-      <thead>
-        <tr>
-          <th>Time</th>
-          <th>Title</th>
-          <th>Presenter</th>
-        </tr>
-      </thead>
-      <tbody>
-        <template repeat="{{item in data}}">
-          <template if="{{display(item)}}">
-            <tr>
-              <td>{{item.start}}</td>
-              <td>{{item.title}}</td>
-              <td>{{item.presenter}}</td>
-            </tr>
-          </template>
+    <ul id="schedule">
+      <template repeat="{{item in data}}">
+        <template if="{{display(item)}}">
+          <li class="{{item.display}}" layout horizontal>
+            <div class="start"><time-formatter time="{{item.start}}"></time-formatter></div>
+            <div flex class="info">
+              <template if="{{item.presenter}}">
+                <div class="presenter">{{item.presenter}}</div>
+              </template>
+              <div class="title">{{item.title}}</div>
+            </div>
+          </li>
         </template>
-      </tbody>
-    </table>
+      </template>
+    </ul>
   </template>
   <script>
     (function () {
@@ -44,23 +40,19 @@
         logout: function () {
           this.$.firebaseLogin.logout();
         },
-        onLogin: function (authInfo) {
-          console.log("onLogin", this.user);
+        onLogin: function () {
+          console.log('onLogin', this.user);
         },
         onLogout: function (user) {
-          console.log("onLogout", user);
+          console.log('onLogout', user);
         },
         onLoginError: function (user) {
-          console.log("onLoginError", user);
+          console.log('onLoginError', user);
         },
         display: function (item) {
-          if (item && (item.display || item.display === undefined)) {
-            return true;
-          }
-          return false;
+          return item.display !== 'hidden';
         },
         ready: function () {
-          console.log("here");
         }
       });
     })();
